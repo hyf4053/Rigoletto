@@ -32,6 +32,7 @@ MonoBehaviour:
     assemblyNames:
     - Assembly-CSharp-firstpass
     - Cinemachine
+    - Elringus.Naninovel.Runtime
     showAdvancedSettings: 0
   addMgrToSceneAutomatically: 0
   autoUpdateReferences: 1
@@ -42,6 +43,6 @@ MonoBehaviour:
   updateReferencesWhenSceneIsSaved: 1
   updateReferencesWhenSceneIsOpened: 1
   referenceFolders: []
-  logDebugInfo: 0
+  logDebugInfo: 1
   logWarnings: 1
   logErrors: 1
