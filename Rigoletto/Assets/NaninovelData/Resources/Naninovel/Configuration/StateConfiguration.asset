@@ -18,8 +18,8 @@ MonoBehaviour:
   SaveSlotMask: GameSave{0:000}
   QuickSaveSlotMask: GameQuickSave{0:000}
   SaveSlotLimit: 99
-  QuickSaveSlotLimit: 18
-  BinarySaveFiles: 1
+  QuickSaveSlotLimit: 1
+  BinarySaveFiles: 0
   LoadStartDelay: 0.3
   ResetOnGoto: 0
   EnableStateRollback: 1

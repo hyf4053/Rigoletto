@@ -172,3 +172,8 @@ MonoBehaviour:
     Resources: []
   - Id: Unlockables
     Resources: []
+  - Id: Scripts
+    Resources:
+    - name: Lanmaomi
+      pathPrefix: Scripts
+      guid: 095f71d8655e24520852ecb5ba6309cf

@@ -1,0 +1,16 @@
+{
+    "objectJsonMap": {
+        "keys": [
+            "Naninovel.UI.SaveLoadMenu+GlobalState, Elringus.Naninovel.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "Naninovel.CustomVariableManager+GlobalState, Elringus.Naninovel.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "Naninovel.ScriptPlayer+GlobalState, Elringus.Naninovel.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "Naninovel.UnlockableManager+GlobalState, Elringus.Naninovel.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+        ],
+        "values": [
+            "{\"LastSaveWasQuick\":true}",
+            "{\"GlobalVariableMap\":{\"keys\":[],\"values\":[]}}",
+            "{\"PlayedScriptRegister\":{\"playedScripts\":[{\"ScriptName\":\"Lanmaomi\",\"PlayedIndexes\":[{\"startIndex\":0,\"endIndex\":0}]}]}}",
+            "{\"UnlockablesMap\":{\"keys\":[],\"values\":[]}}"
+        ]
+    }
+}

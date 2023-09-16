@@ -1,13 +1,13 @@
 using UnityEngine;
 
-namespace Character
+namespace GameFramework
 {
-    public class MainCharacter : BaseCharacter
+    public class LoadingUI : MonoBehaviour
     {
         // Start is called before the first frame update
         void Start()
         {
-            Debug.Log(data.characterID);
+            DontDestroyOnLoad(this);
         }
 
         // Update is called once per frame

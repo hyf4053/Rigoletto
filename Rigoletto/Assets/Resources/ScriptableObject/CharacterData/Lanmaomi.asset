@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: Lanmaomi
   m_EditorClassIdentifier: 
   characterID: Player
-  characterName: Lanmaomi
+  characterDisplayName: Lanmaomi
+  isPlayer: 1
+  isNpc: 0
+  isMobs: 0
+  canDuplicated: 0

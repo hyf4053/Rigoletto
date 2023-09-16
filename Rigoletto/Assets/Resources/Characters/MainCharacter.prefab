@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7952349191508708288}
   - component: {fileID: 5987534897350668447}
+  - component: {fileID: -2951126769573684111}
+  - component: {fileID: 6004221857710088547}
   m_Layer: 0
   m_Name: MainCharacter
   m_TagString: Untagged
@@ -44,4 +46,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78ec757fc93e5457d89944ddfbb1eff0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: 101089276916c4039a546a2983f4c7b0, type: 2}
+  dataPredefined: {fileID: 11400000, guid: 101089276916c4039a546a2983f4c7b0, type: 2}
+  dataToSave:
+    characterID: 
+    characterDisplayName: 
+--- !u!114 &-2951126769573684111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5465450430904275507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baff8732cd3074ef88b34f9cc487846d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabId: 2258066715340110967
+  localRefs:
+    _Keys:
+    - {fileID: 11500000, guid: 78ec757fc93e5457d89944ddfbb1eff0, type: 3}
+    - {fileID: 6004221857710088547}
+    - {fileID: 11500000, guid: 9cfcc9ceea0bf419cb3bcaf548c2600d, type: 3}
+    - {fileID: 11500000, guid: baff8732cd3074ef88b34f9cc487846d, type: 3}
+    - {fileID: 11500000, guid: 2d639df3e881b47769889e85528e24b7, type: 3}
+    - {fileID: -2951126769573684111}
+    - {fileID: 5987534897350668447}
+    - {fileID: 7952349191508708288}
+    - {fileID: 5465450430904275507}
+    - {fileID: 11400000, guid: 101089276916c4039a546a2983f4c7b0, type: 2}
+    _Values: 61724a4dcb018c3ea650be7da61a040ec46a48a07ce38c11691a34a4a7f5434e60291b517e862c79f7e56b65ff7e421782ff3205cdbe3d7dc0d73b6735388475c7c5cb3570e5303e9044d82f87053943
+--- !u!114 &6004221857710088547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5465450430904275507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cfcc9ceea0bf419cb3bcaf548c2600d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveLayer: 0
+  saveTag: 0
+  saveName: 0
+  saveHideFlags: 0
+  saveActive: 0
+  saveChildren: 0
+  componentsToSave:
+  - {fileID: 5987534897350668447}

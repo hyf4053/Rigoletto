@@ -1,3 +1,4 @@
+using SaveLoad;
 using UnityEngine;
 
 namespace GameFramework
@@ -9,7 +10,15 @@ namespace GameFramework
     public class Singleton : MonoBehaviour
     {
         public static Singleton Instance { get; private set; }
+        //游戏管理类
         public GameManager GameManager { get; private set; }
+        //角色管理类
+        public CharacterManager CharacterManager { get; private set; }
+        //存档管理类
+        public SaveLoadManager SaveLoadManager { get; private set; }
+        
+        //UI管理类
+        public UIManager UIManager { get; private set; }
         
         private void Awake()
         {
@@ -20,6 +29,9 @@ namespace GameFramework
             }
             Instance = this;
             GameManager = GetComponentInChildren<GameManager>();
+            CharacterManager = GetComponentInChildren<CharacterManager>();
+            SaveLoadManager = GetComponentInChildren<SaveLoadManager>();
+            UIManager = GetComponentInChildren<UIManager>();
         }
 
         private void Start()

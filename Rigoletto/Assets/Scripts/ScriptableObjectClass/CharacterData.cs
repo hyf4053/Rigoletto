@@ -11,6 +11,10 @@ namespace ScriptableObjectClass
     public class CharacterData : ScriptableObject
     { 
         public string characterID;
-        public string characterName;
+        public string characterDisplayName;
+        public bool isPlayer;
+        public bool isNpc;
+        public bool isMobs;
+        public bool canDuplicated;
     }
 }
