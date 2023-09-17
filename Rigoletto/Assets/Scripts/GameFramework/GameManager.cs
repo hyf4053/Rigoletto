@@ -23,10 +23,10 @@ namespace GameFramework
         //该事件只在主菜单的时候会触发，主要用于主菜单的一些初始化的时候的设置
         private void Awake()
         {
-            if (Singleton.Instance != null)
+            /*if (Singleton.Instance != null)
             {
                 Singleton.Instance.UIManager.loadGameButton.GetComponent<Button>().interactable = Singleton.Instance.SaveLoadManager.CheckSaveExist();
-            }
+            }*/
         }
 
 

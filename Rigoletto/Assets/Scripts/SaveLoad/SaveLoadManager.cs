@@ -41,7 +41,6 @@ namespace SaveLoad
             }
             //游戏内容储存完之后，再保存一次NaniNovel的进度
             var naniNovelStateManager = Engine.GetService<IStateManager>();
-           // naniNovelStateManager.SaveGameAsync("Save1");
             naniNovelStateManager.QuickSaveAsync();
 
             // naniNovelStateManager.LoadGameAsync("Save1");
