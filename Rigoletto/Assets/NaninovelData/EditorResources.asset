@@ -180,5 +180,29 @@ MonoBehaviour:
     - name: NPC1
       pathPrefix: Scripts
       guid: 1388ba0efab714f459e71873eafb0c86
+    - name: NPC2
+      pathPrefix: Scripts
+      guid: 2ea6f31a696b991419ade61cae23c4f0
+    - name: NCP3
+      pathPrefix: Scripts
+      guid: fedc665cacd6d014397549a78811b282
+    - name: NPC4
+      pathPrefix: Scripts
+      guid: 277872ef1b5fe4e4ab4ae697a61f4c33
+    - name: N1andN2
+      pathPrefix: Scripts
+      guid: 6022ad1c9ab21584ca0d38ca26f03a9f
+    - name: N2andN3
+      pathPrefix: Scripts
+      guid: 2dd01ad1e0c0e794791935c9b3b9a02c
+    - name: N3andN4
+      pathPrefix: Scripts
+      guid: 64c8eefeb8c97524191b2bc62ac9db3f
+    - name: N1N2N3
+      pathPrefix: Scripts
+      guid: aa2a6760b979f5e43b6eb310b4613f3a
+    - name: StoryTeller
+      pathPrefix: Scripts
+      guid: cc8dfe2cdd4af594b96acd6624212fb1
   - Id: Characters/993d3b89-fc9f-4ccd-936c-6f95980b0d0a
     Resources: []

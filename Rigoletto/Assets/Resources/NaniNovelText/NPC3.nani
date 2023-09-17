@@ -1,0 +1,6 @@
+@if N3==true
+你好，我是N3！
+@else
+...
+@endIf
+@adventure reset:false

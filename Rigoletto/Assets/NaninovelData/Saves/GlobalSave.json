@@ -8,8 +8,8 @@
         ],
         "values": [
             "{\"LastSaveWasQuick\":true}",
-            "{\"GlobalVariableMap\":{\"keys\":[],\"values\":[]}}",
-            "{\"PlayedScriptRegister\":{\"playedScripts\":[{\"ScriptName\":\"Lanmaomi\",\"PlayedIndexes\":[{\"startIndex\":0,\"endIndex\":1}]},{\"ScriptName\":\"NPC1\",\"PlayedIndexes\":[{\"startIndex\":0,\"endIndex\":2}]}]}}",
+            "{\"GlobalVariableMap\":{\"keys\":[\"G_N1\",\"G_N2\",\"G_N3\",\"G_N4\"],\"values\":[\"True\",\"False\",\"False\",\"False\"]}}",
+            "{\"PlayedScriptRegister\":{\"playedScripts\":[{\"ScriptName\":\"Lanmaomi\",\"PlayedIndexes\":[{\"startIndex\":0,\"endIndex\":1}]},{\"ScriptName\":\"NPC1\",\"PlayedIndexes\":[{\"startIndex\":0,\"endIndex\":3}]},{\"ScriptName\":\"StoryTeller\",\"PlayedIndexes\":[{\"startIndex\":0,\"endIndex\":1}]},{\"ScriptName\":\"NPC2\",\"PlayedIndexes\":[{\"startIndex\":0,\"endIndex\":6},{\"startIndex\":13,\"endIndex\":14}]}]}}",
             "{\"UnlockablesMap\":{\"keys\":[],\"values\":[]}}"
         ]
     }

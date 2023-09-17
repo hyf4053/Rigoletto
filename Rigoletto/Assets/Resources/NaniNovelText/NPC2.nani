@@ -1,0 +1,15 @@
+@if (N1==true&&N3==false&&N4==false)
+这是N2，你刚刚和N1讲过话了吧？
+那么你接下来想和N3聊一下还是和N4聊一下呢？
+@choice "N3" set:N3=true do:"你现在可以和N3聊一下了"
+@choice "N4" set:N4=true
+@choice "都不想" do:"好吧！什么时候想的话再来找我！"
+@elseIf (N1==true&&N3==true&&N4==false)
+看来你和N3聊过了，现在想要和N4聊一下吗？
+@choice "好" do:"快去找N4吧！"
+@choice "不好" do:"好吧！什么时候想的话再来找我！"
+@else
+先和N1聊一下吧！ 
+@endIf
+@stop
+@adventure reset:false

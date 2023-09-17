@@ -23,7 +23,7 @@ namespace Actors.Character
         // Update is called once per frame
         void Update()
         {
-            if (BaseCharacter.dataToSave.isPlayer && Singleton.Instance.GameManager.Data.GameModeState == GameModeState.Adventure)
+            if (BaseCharacter.dataToSave.isPlayer /*&& Singleton.Instance.GameManager.Data.GameModeState == GameModeState.Adventure*/)
             {
                 if (Input.GetKey(KeyCode.D)||Input.GetKey(KeyCode.A))
                 {
