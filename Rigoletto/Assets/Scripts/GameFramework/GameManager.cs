@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Actors.Character;
 using UnityEngine;
 using Naninovel;
 using NaniNovelHelper.Commands;
@@ -20,7 +21,14 @@ namespace GameFramework
         public bool loadNaniNovel;
         //游戏管理器数据
         public GameManagerData Data;
-        //用于获取当前场景的默认配置表信息，然后会和存档中对比是否有同ID的配置表，如果有，则以存档中的配置表为基础生成
+        
+        //场景中已经刷新的目标，用于覆盖SceneConfiguration的数据
+        //public List<GameObject> AllSpawnedGameObjects;
+        
+        //场景中角色类型的存档数据
+        //public List<CharacterDataStructure> LoadedSpawnedCharacterData;
+        
+        //用于获取当前场景的默认配置表信息，然后会和存档中对比是否有同ID的配置表，如果有，则更新数据到场景配置表中并根据最新的配置表生成场景内容
         public SceneConfiguration SceneConfiguration;
 
         //该事件只在主菜单的时候会触发，主要用于主菜单的一些初始化的时候的设置
@@ -67,9 +75,6 @@ namespace GameFramework
             Debug.Log("AdvMode Switching...");
             await switchCommand.ExecuteAsync();
             Debug.Log("Switch To AdvMode");
-
-            //初始化玩家角色
-            //Singleton.Instance.CharacterManager.ConstructNewCharacter(mainCharacter,false,true);
         }
 
         /// <summary>
@@ -92,11 +97,31 @@ namespace GameFramework
             Application.Quit();
 #endif
         }
+        
+        /// <summary>
+        /// 移除并清空全部的角色对象，通常在重新加载某个场景时需要调用
+        /// </summary>
+        /*public void ClearSpawnedCharacterList()
+        {
+            foreach (var spawnedInstance in AllSpawnedGameObjects)
+            {
+                Destroy(spawnedInstance);
+            }
+            AllSpawnedGameObjects.Clear();
+        }*/
+
+        /*public void AddGameObjectToTheList(GameObject spawned)
+        {
+            AllSpawnedGameObjects.Add(spawned);
+            //LoadedSpawnedCharacterData.Add((MainCharacter)spawned);
+        }*/
 
         // Update is called once per frame
         void Update()
         {
         
         }
+        
+        
     }
 }

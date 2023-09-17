@@ -14,7 +14,7 @@ namespace Actors.Character
         // Start is called before the first frame update
         void Start()
         {
-            DataInit();
+            //DataInit();
             //Debug.Log(data
             //Predefined.characterID);
         }

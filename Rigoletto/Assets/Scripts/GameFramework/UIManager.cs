@@ -24,8 +24,6 @@ namespace GameFramework
             //todo：写死的动画，只是展示功能
             loadingScreen.GetComponentInChildren<Image>().DOFade(0, 1.5f);
             loadingScreen.GetComponentInChildren<TMP_Text>().DOFade(0, 1.5f).OnComplete(()=>loadingScreen.SetActive(false));
-            //初始化玩家角色
-            //Singleton.Instance.CharacterManager.ConstructNewCharacter(Singleton.Instance.GameManager.mainCharacter,false,true);
         }
         
         public void LoadScene(int sceneID)

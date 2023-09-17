@@ -13,7 +13,7 @@ namespace SceneConfig
     {
         //场景ID，用于匹配对应的参数表
         public string sceneID;
-        //参数表，记录了需要刷新的参数
+        //参数表，记录了需要刷新的预制件，这些预制件都是以原始参数刷新出来的
         public List<GameObject> prefabNeedToSpawn;
     }
 }

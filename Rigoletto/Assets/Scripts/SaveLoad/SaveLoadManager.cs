@@ -1,9 +1,11 @@
 using System;
+using System.Collections.Generic;
 using Actors.Character;
 using GameFramework;
 using Naninovel;
 using Naninovel.Commands;
 using NaniNovelHelper.Commands;
+using SceneConfig;
 using UnityEngine;
 
 namespace SaveLoad
@@ -30,25 +32,47 @@ namespace SaveLoad
             return ES3.FileExists("Data.Save");
         }
 
+        //存储角色数据
+        public void SaveCharacterData(string characterID, CharacterDataStructure dataStructure, Transform TargetTransform)
+        {
+            ES3.Save("transform"+characterID,TargetTransform);
+            ES3.Save(characterID,dataStructure);
+        }
+
+        //加载角色数据
+        public CharacterDataStructure LoadCharacterData(string characterID)
+        {
+            return (CharacterDataStructure)ES3.Load(characterID);
+        }
+
+        public void LoadCharacterTransform(string characterID,Transform targetTransform)
+        {
+            ES3.LoadInto("transform"+characterID,targetTransform);
+        }
+
+        public bool CheckCharacterSave(string characterID)
+        {
+            return ES3.KeyExists(characterID);
+        }
+        
+
         /// <summary>
         /// 保存全部数据
-        /// </summary>
+        /// </summary>  
         public void SaveAllData()
         {
-            //存储GameManager的状态
-            ES3.Save("GameManager",Singleton.Instance.GameManager.Data);
-            //遍历刷新出来的角色，根据每个NPC的ID，对dataToSave的内容进行存储
-            foreach (var character in Singleton.Instance.CharacterManager.spawnedCharacters)
+            //存储GameManager Data的数据
+            ES3.Save("GameManagerData",Singleton.Instance.GameManager.Data);
+            
+            //存储Character Data的数据
+            foreach (var spawnedCharacter in Singleton.Instance.CharacterManager.spawnedCharacters)
             {
-                ES3.Save(character.GetComponentInChildren<BaseCharacter>().dataToSave.characterID,character.GetComponentInChildren<BaseCharacter>().dataToSave);
+                ES3.Save(spawnedCharacter.GetComponentInChildren<BaseCharacter>().dataToSave.characterID,spawnedCharacter.GetComponentInChildren<BaseCharacter>().dataToSave);
             }
+            
             //游戏内容储存完之后，再保存一次NaniNovel的进度
             var naniNovelStateManager = Engine.GetService<IStateManager>();
             naniNovelStateManager.QuickSaveAsync();
-
-            // naniNovelStateManager.LoadGameAsync("Save1");
-            // naniNovelStateManager.sav
-            //Debug.Log("Save Done");
         }
 
         /// <summary>

@@ -22,9 +22,19 @@ namespace Actors.Character
         /// </summary>
         public virtual void DataInit()
         {
+            dataToSave.prefabID = dataPredefined.data.prefabID;
             dataToSave.characterID = dataPredefined.data.characterID;
             dataToSave.characterDisplayName = dataPredefined.data.characterDisplayName;
             dataToSave.isPlayer = dataPredefined.data.isPlayer;
+        }
+
+        public virtual void LoadData(CharacterDataStructure dataStructure)
+        {
+            dataToSave.prefabID = dataStructure.prefabID;
+            dataToSave.characterID = dataStructure.characterID;
+            dataToSave.characterDisplayName = dataStructure.characterDisplayName;
+            dataToSave.isPlayer = dataStructure.isPlayer;
+            
         }
 
     }

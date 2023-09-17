@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Player
   m_EditorClassIdentifier: 
   data:
+    prefabID: Player_0
     characterID: Player
     characterDisplayName: Lanmaomi
     isPlayer: 1
