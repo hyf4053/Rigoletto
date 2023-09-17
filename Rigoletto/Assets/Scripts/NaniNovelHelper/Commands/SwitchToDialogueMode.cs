@@ -1,18 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
+using Naninovel;
 using UnityEngine;
 
-public class SwitchToDialogueMode : MonoBehaviour
+namespace NaniNovelHelper.Commands
 {
-    // Start is called before the first frame update
-    void Start()
+    /// <summary>
+    /// todo：未完成
+    /// </summary>
+    [CommandAlias("dialogue")]
+    public class SwitchToDialogueMode : Command
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public override async UniTask ExecuteAsync(AsyncToken asyncToken = default)
+        {
+            //1. 启用Naninovel的InputManager
+            var inputManager = Engine.GetService<IInputManager>();
+            inputManager.ProcessInput = true;
+            
+            //2. todo：禁用玩家的InputManager
+            
+        }
     }
 }

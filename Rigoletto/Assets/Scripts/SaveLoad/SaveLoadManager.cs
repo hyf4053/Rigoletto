@@ -37,7 +37,7 @@ namespace SaveLoad
             //遍历刷新出来的角色，根据每个NPC的ID，对dataToSave的内容进行存储
             foreach (var character in Singleton.Instance.CharacterManager.spawnedCharacters)
             {
-                ES3.Save(character.GetComponent<BaseCharacter>().dataToSave.characterID,character.GetComponent<BaseCharacter>().dataToSave);
+                ES3.Save(character.GetComponentInChildren<BaseCharacter>().dataToSave.characterID,character.GetComponentInChildren<BaseCharacter>().dataToSave);
             }
             //游戏内容储存完之后，再保存一次NaniNovel的进度
             var naniNovelStateManager = Engine.GetService<IStateManager>();

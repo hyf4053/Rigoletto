@@ -1,3 +1,4 @@
+using Actors.Character;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -9,12 +10,7 @@ namespace ScriptableObjectClass
     /// </summary>
     [CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/CharacterData", order = 1)]
     public class CharacterData : ScriptableObject
-    { 
-        public string characterID;
-        public string characterDisplayName;
-        public bool isPlayer;
-        public bool isNpc;
-        public bool isMobs;
-        public bool canDuplicated;
+    {
+        public CharacterDataStructure data;
     }
 }

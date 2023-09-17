@@ -177,3 +177,8 @@ MonoBehaviour:
     - name: Lanmaomi
       pathPrefix: Scripts
       guid: 095f71d8655e24520852ecb5ba6309cf
+    - name: NPC1
+      pathPrefix: Scripts
+      guid: 1388ba0efab714f459e71873eafb0c86
+  - Id: Characters/993d3b89-fc9f-4ccd-936c-6f95980b0d0a
+    Resources: []

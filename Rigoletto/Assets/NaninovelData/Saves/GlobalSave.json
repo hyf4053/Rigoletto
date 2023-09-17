@@ -9,7 +9,7 @@
         "values": [
             "{\"LastSaveWasQuick\":true}",
             "{\"GlobalVariableMap\":{\"keys\":[],\"values\":[]}}",
-            "{\"PlayedScriptRegister\":{\"playedScripts\":[{\"ScriptName\":\"Lanmaomi\",\"PlayedIndexes\":[{\"startIndex\":0,\"endIndex\":0}]}]}}",
+            "{\"PlayedScriptRegister\":{\"playedScripts\":[{\"ScriptName\":\"Lanmaomi\",\"PlayedIndexes\":[{\"startIndex\":0,\"endIndex\":0}]},{\"ScriptName\":\"NPC1\",\"PlayedIndexes\":[{\"startIndex\":0,\"endIndex\":1}]}]}}",
             "{\"UnlockablesMap\":{\"keys\":[],\"values\":[]}}"
         ]
     }

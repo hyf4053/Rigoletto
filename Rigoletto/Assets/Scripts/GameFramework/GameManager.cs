@@ -57,7 +57,7 @@ namespace GameFramework
             Debug.Log("Switch To AdvMode");
 
             //初始化玩家角色
-            Singleton.Instance.CharacterManager.ConstructNewCharacter(mainCharacter);
+            Singleton.Instance.CharacterManager.ConstructNewCharacter(mainCharacter,false,true);
         }
 
         // Update is called once per frame

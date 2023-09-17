@@ -20,6 +20,9 @@ namespace GameFramework
         //UI管理类
         public UIManager UIManager { get; private set; }
         
+        //相机管理类
+        public CameraManager CameraManager { get; private set; }
+        
         private void Awake()
         {
             if (Instance != null && Instance != this)
@@ -32,6 +35,7 @@ namespace GameFramework
             CharacterManager = GetComponentInChildren<CharacterManager>();
             SaveLoadManager = GetComponentInChildren<SaveLoadManager>();
             UIManager = GetComponentInChildren<UIManager>();
+            CameraManager = GetComponentInChildren<CameraManager>();
         }
 
         private void Start()

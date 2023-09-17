@@ -21,6 +21,7 @@ namespace GameFramework
             await Task.Delay(2000);
             LoadScene(sceneID);
             await Singleton.Instance.GameManager.LoadNaniNovel();
+           // Singleton.Instance.CameraManager.RedisplacementMainCamera();
             //todo：写死的动画，只是展示功能
             loadingScreen.GetComponentInChildren<Image>().DOFade(0, 1.5f);
             loadingScreen.GetComponentInChildren<TMP_Text>().DOFade(0, 1.5f).OnComplete(()=>loadingScreen.SetActive(false));
@@ -44,6 +45,7 @@ namespace GameFramework
             {
                 yield return null;
             }
+            Singleton.Instance.CameraManager.RedisplacementMainCamera();
         }
         
         

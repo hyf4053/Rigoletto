@@ -8,34 +8,38 @@ namespace Actors.Character
         public Animator characterAnimator;
         public SpriteRenderer SpRenderer;
         public Rigidbody2D Rigidbody2D;
+        public BaseCharacter BaseCharacter;
 
         private static readonly int isMove = Animator.StringToHash("isMove");
 
         // Start is called before the first frame update
         void Start()
         {
-            
+            BaseCharacter = GetComponentInChildren<BaseCharacter>();
         }
 
         // Update is called once per frame
         void Update()
         {
-            if (Input.GetKey(KeyCode.D)||Input.GetKey(KeyCode.A))
+            if (BaseCharacter.dataToSave.isPlayer)
             {
-                characterAnimator.SetBool(isMove,true);
-                CharacterMove();
-            }
+                if (Input.GetKey(KeyCode.D)||Input.GetKey(KeyCode.A))
+                {
+                    characterAnimator.SetBool(isMove,true);
+                    CharacterMove();
+                }
 
-            if (!Input.GetKey(KeyCode.D)&&!Input.GetKey(KeyCode.A))
-            {
-                characterAnimator.SetBool(isMove,false);
-                Rigidbody2D.velocity = Vector2.zero;
-            }
+                if (!Input.GetKey(KeyCode.D)&&!Input.GetKey(KeyCode.A))
+                {
+                    characterAnimator.SetBool(isMove,false);
+                    Rigidbody2D.velocity = Vector2.zero;
+                }
 
-            if (Input.GetKey(KeyCode.W)||Input.GetKey(KeyCode.S))
-            {
-                characterAnimator.SetBool(isMove,true);
-                CharacterMove();
+                if (Input.GetKey(KeyCode.W)||Input.GetKey(KeyCode.S))
+                {
+                    characterAnimator.SetBool(isMove,true);
+                    CharacterMove();
+                }
             }
         }
 

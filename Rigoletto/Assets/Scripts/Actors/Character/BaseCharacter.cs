@@ -22,8 +22,9 @@ namespace Actors.Character
         /// </summary>
         public virtual void DataInit()
         {
-            dataToSave.characterID = dataPredefined.characterID;
-            dataToSave.characterDisplayName = dataPredefined.characterDisplayName;
+            dataToSave.characterID = dataPredefined.data.characterID;
+            dataToSave.characterDisplayName = dataPredefined.data.characterDisplayName;
+            dataToSave.isPlayer = dataPredefined.data.isPlayer;
         }
 
     }
