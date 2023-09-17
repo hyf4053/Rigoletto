@@ -21,31 +21,16 @@ namespace GameFramework
             await Task.Delay(2000);
             LoadScene(sceneID);
             await Singleton.Instance.GameManager.LoadNaniNovel();
-           // Singleton.Instance.CameraManager.RedisplacementMainCamera();
             //todo：写死的动画，只是展示功能
             loadingScreen.GetComponentInChildren<Image>().DOFade(0, 1.5f);
             loadingScreen.GetComponentInChildren<TMP_Text>().DOFade(0, 1.5f).OnComplete(()=>loadingScreen.SetActive(false));
+            //初始化玩家角色
+            //Singleton.Instance.CharacterManager.ConstructNewCharacter(Singleton.Instance.GameManager.mainCharacter,false,true);
         }
-
-        public void LoadGame(int sceneID)
-        {
-            
-        }
-
+        
         public void LoadScene(int sceneID)
         {
-            StartCoroutine(LoadSceneAsync(sceneID));
-        }
-
-        IEnumerator LoadSceneAsync(int sceneID)
-        {
-            AsyncOperation operation = SceneManager.LoadSceneAsync(sceneID);
-
-            while (!operation.isDone)
-            {
-                yield return null;
-            }
-            Singleton.Instance.CameraManager.RedisplacementMainCamera();
+            Singleton.Instance.LoadingManager.LoadScene(sceneID);
         }
         
         
@@ -54,11 +39,7 @@ namespace GameFramework
         /// </summary>
         public void ExitGame()
         {
-#if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-#else
-            Application.Quit();
-#endif
+            Singleton.Instance.GameManager.ExitGame();
         }
     }
 }

@@ -20,7 +20,7 @@ namespace GameFramework
         /// <param name="bCanDuplicated">是否可以重复，默认false</param>
         /// <param name="bNeedRebindCamera">是否需要重绑定至主相机，默认false</param>
         /// <returns></returns>
-        public bool ConstructNewCharacter(GameObject characterPrefab,bool bCanDuplicated = false, bool bNeedRebindCamera = false)
+        public void ConstructNewCharacter(GameObject characterPrefab,bool bCanDuplicated = false, bool bNeedRebindCamera = false)
         {
             if (bCanDuplicated)
             {
@@ -28,14 +28,26 @@ namespace GameFramework
                 temp1.GetComponentInChildren<BaseCharacter>().DataInit();
                 spawnedCharacters.Add(temp1); 
                 if(bNeedRebindCamera) Singleton.Instance.CameraManager.RebindCharacterToTheCamera(temp1,temp1,Singleton.Instance.CameraManager.mainVirtualCamera);
-                return true;
+                return;
             }
             var temp2 = Instantiate(characterPrefab);
-            if (temp2 == null || spawnedCharacters.Contains(temp2)) return false;
+            if (temp2 == null || spawnedCharacters.Contains(temp2)) return;
             temp2.GetComponentInChildren<BaseCharacter>().DataInit();
             spawnedCharacters.Add(temp2);
             if(bNeedRebindCamera) Singleton.Instance.CameraManager.RebindCharacterToTheCamera(temp2,temp2,Singleton.Instance.CameraManager.mainVirtualCamera);
-            return true;
+            return;
+        }
+
+        /// <summary>
+        /// 移除并清空全部的角色对象，通常在重新加载某个场景时需要调用
+        /// </summary>
+        public void ClearSpawnedCharacterList()
+        {
+            foreach (var character in spawnedCharacters)
+            {
+                Destroy(character);
+            }
+            spawnedCharacters.Clear();
         }
         
         //public bool ConstructCharacterFromSaveData()

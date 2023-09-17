@@ -15,6 +15,7 @@ namespace SaveLoad
     /// </summary>
     public class SaveLoadManager : MonoBehaviour
     {
+        
         private void Start()
         {
         }
@@ -34,6 +35,8 @@ namespace SaveLoad
         /// </summary>
         public void SaveAllData()
         {
+            //存储GameManager的状态
+            ES3.Save("GameManager",Singleton.Instance.GameManager.Data);
             //遍历刷新出来的角色，根据每个NPC的ID，对dataToSave的内容进行存储
             foreach (var character in Singleton.Instance.CharacterManager.spawnedCharacters)
             {
@@ -53,8 +56,27 @@ namespace SaveLoad
         /// </summary>
         public async void LoadAllData()
         {
-            //todo加载存档数据
+            /*
+             * 加载方式：
+             * 1.重新加载存档的目标场景
+             * 2.根据存档数据，初始化对应实例
+             * 3.将存档数据加载进实例中
+             * 4.完成加载
+             * 例如：
+             * 1.载入场景A
+             * 2.等待A场景初始化完成
+             * 3.根据存档内容加载对应的对象
+             * 4.完成加载
+             */
             
+            //重新加载目标场景
+            Singleton.Instance.UIManager.StartNewGame(Singleton.Instance.GameManager.Data.CurrentSceneID);
+            //Singleton.Instance.CharacterManager.ConstructNewCharacter(Singleton.Instance.GameManager.mainCharacter,false,true);
+            
+            //todo：加载存档数据
+            //加载GameManager数据
+            
+            /*
             //加载NaniNovel数据（加载该数据时会自动开启对话UI）
             var naniNovelStateManager = Engine.GetService<IStateManager>();
             await naniNovelStateManager.QuickLoadAsync();
@@ -62,6 +84,7 @@ namespace SaveLoad
             //隐藏对话UI
             var hidePrinter = new HidePrinter();
             await hidePrinter.ExecuteAsync();
+            */
             
             //todo：跳转到某个具体模式
 

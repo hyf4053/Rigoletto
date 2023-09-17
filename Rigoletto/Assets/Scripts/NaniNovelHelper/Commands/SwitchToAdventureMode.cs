@@ -1,3 +1,4 @@
+using GameFramework;
 using Naninovel;
 using Naninovel.Commands;
 using UnityEngine;
@@ -41,6 +42,7 @@ namespace NaniNovelHelper.Commands
             var naniCamera = Engine.GetService<ICameraManager>().Camera;
             naniCamera.enabled = false;
             
+            Singleton.Instance.GameManager.ChangeGameModeState(GameModeState.Adventure);
             //6. 启用玩家InputManager
             // var PlayerController = Object.FindObjectOfType<Stand>
 

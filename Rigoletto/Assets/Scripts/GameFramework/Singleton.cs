@@ -17,6 +17,9 @@ namespace GameFramework
         //存档管理类
         public SaveLoadManager SaveLoadManager { get; private set; }
         
+        //加载管理器
+        public LoadingManager LoadingManager { get; private set; }
+        
         //UI管理类
         public UIManager UIManager { get; private set; }
         
@@ -36,6 +39,7 @@ namespace GameFramework
             SaveLoadManager = GetComponentInChildren<SaveLoadManager>();
             UIManager = GetComponentInChildren<UIManager>();
             CameraManager = GetComponentInChildren<CameraManager>();
+            LoadingManager = GetComponentInChildren<LoadingManager>();
         }
 
         private void Start()

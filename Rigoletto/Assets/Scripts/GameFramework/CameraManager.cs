@@ -15,12 +15,15 @@ namespace GameFramework
         private void Awake()
         {
             //根据Tag自动分配当前场景中的主相机
-            RedisplacementMainCamera();
+            //RedisplacementMainCamera();
         }
 
-        public void RedisplacementMainCamera()
+        public void RedisplaceMainCamera()
         {
-            mainVirtualCamera = GameObject.FindWithTag("MainVirtualCamera").GetComponent<CinemachineVirtualCamera>();
+            if (Singleton.Instance.GameManager.Data.CurrentSceneID != 0)
+            {
+                mainVirtualCamera = GameObject.FindWithTag("MainVirtualCamera").GetComponent<CinemachineVirtualCamera>();
+            }
         }
 
         /// <summary>
@@ -34,10 +37,16 @@ namespace GameFramework
         {
             if (cmVirtualCamera == null)
             {
-                RedisplacementMainCamera();
+                RedisplaceMainCamera();
+                mainVirtualCamera.Follow = character.transform;
+                mainVirtualCamera.LookAt = lookAtTransform.transform;
             }
-            cmVirtualCamera.Follow = character.transform;
-            cmVirtualCamera.LookAt = lookAtTransform.transform;
+            else
+            {
+                cmVirtualCamera.Follow = character.transform;
+                cmVirtualCamera.LookAt = lookAtTransform.transform;
+            }
+            
         }
         
         
