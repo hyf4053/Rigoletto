@@ -25,6 +25,19 @@ namespace GameFramework
             loadingScreen.GetComponentInChildren<Image>().DOFade(0, 1.5f);
             loadingScreen.GetComponentInChildren<TMP_Text>().DOFade(0, 1.5f).OnComplete(()=>loadingScreen.SetActive(false));
         }
+        public async void StartNewGameWithMode(int sceneID,GameModeState mode = GameModeState.Adventure)
+        {
+            loadingScreen.SetActive(true);
+            await Task.Delay(2000);
+            LoadScene(sceneID);
+            await Singleton.Instance.GameManager.LoadNaniNovel(mode);
+            //todo：写死的动画，只是展示功能
+            loadingScreen.GetComponentInChildren<Image>().DOFade(0, 1.5f);
+            loadingScreen.GetComponentInChildren<TMP_Text>().DOFade(0, 1.5f).OnComplete(()=>loadingScreen.SetActive(false));
+            
+            /*//再次加载GameManager数据
+            Singleton.Instance.GameManager.LoadGameManagerData();*/
+        }
         
         public void LoadScene(int sceneID)
         {

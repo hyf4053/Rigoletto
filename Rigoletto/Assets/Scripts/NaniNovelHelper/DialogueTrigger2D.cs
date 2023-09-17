@@ -1,5 +1,6 @@
 using System;
 using Naninovel;
+using NaniNovelHelper.Commands;
 using UnityEngine;
 
 namespace NaniNovelHelper
@@ -10,26 +11,14 @@ namespace NaniNovelHelper
 
         public string Label;
 
-        private void OnTriggerEnter2D(Collider2D other)
+        private async void OnTriggerEnter2D(Collider2D other)
         {
-            //启用Nani的输入输出控制
-            var inputManager = Engine.GetService<IInputManager>();
-            inputManager.ProcessInput = true;
+            var switchToDialogueMode = new SwitchToDialogueMode
+            {
+                ScriptName = this.ScriptName, Label = this.Label
+            };
 
-            var scriptPlayer = Engine.GetService <IScriptPlayer>();
-            scriptPlayer.PreloadAndPlayAsync(ScriptName, label: Label).Forget();
-        }
-
-        // Start is called before the first frame update
-        void Start()
-        {
-        
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-        
+            await switchToDialogueMode.ExecuteAsync();
         }
     }
 }

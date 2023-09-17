@@ -43,29 +43,12 @@ namespace GameFramework
             }
             //加载完成后, 搜寻新场景中的配置信息表
             Singleton.Instance.GameManager.SceneConfiguration = FindObjectOfType<SceneConfiguration>();
-            
             //卸载并清空之前已经加载的实例
             Singleton.Instance.CharacterManager.ClearSpawnedCharacterList();
-          //  Singleton.Instance.GameManager.ClearSpawnedCharacterList();
-            
             //更新场景ID
             Singleton.Instance.GameManager.GetCurrentSceneID();
-            
             //更新主相机信息
             Singleton.Instance.CameraManager.RedisplaceMainCamera();
-            
-            //尝试读取是否有对应场景的存档，如果有则覆盖当前默认的场景配置内容
-            //Singleton.Instance.SaveLoadManager.TryToLoadSceneConfigData(Singleton.Instance.GameManager.SceneConfiguration.sceneID, Singleton.Instance.GameManager.SceneConfiguration);
-            /*Singleton.Instance.SaveLoadManager.TryToLoadSceneConfigData(Singleton.Instance.GameManager.SceneConfiguration.sceneID,
-                Singleton.Instance.GameManager.LoadedSpawnedGameObjectsData);*/
-            
-            //根据场景配置表加载相关内容
-            /*if (Singleton.Instance.GameManager.LoadedSpawnedGameObjectsData.Count > 0)
-            {
-                Singleton.Instance.CharacterManager.ConstructNewCharacter(Singleton.Instance.GameManager.SceneConfiguration.prefabNeedToSpawn[0],false,true);
-            }
-            else
-            {*/
             //TODO:Save Slot
             if (ES3.FileExists("Data.Save"))
             {

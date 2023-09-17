@@ -13,20 +13,9 @@ namespace SaveLoad
     /// <summary>
     /// 保存加载类
     /// 主要使用Easy Save 3的功能去序列化或者保存游戏进度
-    /// todo:需要想办法让这个进度和NaniNovel的进度同步，或者说，这个保存类进行存档的时候，NaniNovel也需要调用存档。
     /// </summary>
     public class SaveLoadManager : MonoBehaviour
     {
-        
-        private void Start()
-        {
-        }
-
-        private void OnApplicationQuit()
-        {
-            //SaveAllData();
-        }
-
         public bool CheckSaveExist()
         {
             return ES3.FileExists("Data.Save");
@@ -93,23 +82,27 @@ namespace SaveLoad
              * 4.完成加载
              */
             
+            //先加载GameManager数据
+            Singleton.Instance.GameManager.LoadGameManagerData();
+            //然后把对话状态缓存出来
+            var mode = Singleton.Instance.GameManager.Data.GameModeState;
             //重新加载目标场景
-            Singleton.Instance.UIManager.StartNewGame(Singleton.Instance.GameManager.Data.CurrentSceneID);
-            //Singleton.Instance.CharacterManager.ConstructNewCharacter(Singleton.Instance.GameManager.mainCharacter,false,true);
+            Singleton.Instance.UIManager.StartNewGameWithMode(Singleton.Instance.GameManager.Data.CurrentSceneID,mode);
             
-            //todo：加载存档数据
-            //加载GameManager数据
+            //todo：把角色数据加载移出来
+            //再次加载GameManager数据
+            Singleton.Instance.GameManager.LoadGameManagerData();
             
-            /*
             //加载NaniNovel数据（加载该数据时会自动开启对话UI）
             var naniNovelStateManager = Engine.GetService<IStateManager>();
             await naniNovelStateManager.QuickLoadAsync();
-            
-            //隐藏对话UI
-            var hidePrinter = new HidePrinter();
-            await hidePrinter.ExecuteAsync();
-            */
-            
+
+            if (Singleton.Instance.GameManager.Data.GameModeState == GameModeState.Adventure)
+            {
+                //隐藏对话UI
+                var hidePrinter = new HidePrinter();
+                await hidePrinter.ExecuteAsync();
+            }
             //todo：跳转到某个具体模式
 
 

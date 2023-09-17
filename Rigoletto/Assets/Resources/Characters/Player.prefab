@@ -154,6 +154,7 @@ MonoBehaviour:
   SpRenderer: {fileID: 8524850759829750156}
   Rigidbody2D: {fileID: 992194074796721922}
   BaseCharacter: {fileID: 0}
+  speed: 0.004
 --- !u!61 &661996872552726315
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -259,6 +260,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataPredefined: {fileID: 11400000, guid: 101089276916c4039a546a2983f4c7b0, type: 2}
   dataToSave:
+    prefabID: 
     characterID: 
     characterDisplayName: 
     isPlayer: 0

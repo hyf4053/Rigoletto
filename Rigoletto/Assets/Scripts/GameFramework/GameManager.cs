@@ -51,6 +51,15 @@ namespace GameFramework
             }
         }
 
+        public void LoadGameManagerData()
+        {
+            if (ES3.KeyExists("GameManagerData"))
+            {
+                var s = (GameManagerData)ES3.Load("GameManagerData");
+                Data.GameModeState = s.GameModeState;
+            }
+        }
+
         /// <summary>
         /// 获取当前已加载的场景ID
         /// </summary>
@@ -59,22 +68,31 @@ namespace GameFramework
             Data.CurrentSceneID = SceneManager.GetActiveScene().buildIndex;
         }
 
-        public async Task LoadNaniNovel()
+        public async Task LoadNaniNovel(GameModeState mode = GameModeState.Adventure)
         {
             //1.手动异步加载NaniNovel
             Debug.Log("Start Init NaniNovel...");
             await RuntimeInitializer.InitializeAsync();
             Debug.Log("NaniNovel Loaded!");
-            
-            //2.初始化冒险模式（以后也可能是其他的模式）
-            var switchCommand = new SwitchToAdventureMode
+
+            if (mode == GameModeState.Adventure)
             {
-                ResetState = false
-            };
+                //2.初始化冒险模式（以后也可能是其他的模式）
+                var switchCommand = new SwitchToAdventureMode
+                {
+                    ResetState = false
+                };
             
-            Debug.Log("AdvMode Switching...");
-            await switchCommand.ExecuteAsync();
-            Debug.Log("Switch To AdvMode");
+                Debug.Log("AdvMode Switching...");
+                await switchCommand.ExecuteAsync();
+                Debug.Log("Switch To AdvMode");
+            }
+
+            if (mode == GameModeState.Dialogue)
+            {
+                
+            }
+            
         }
 
         /// <summary>

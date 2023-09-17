@@ -18,12 +18,12 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 0
-      width: NaN
-      height: NaN
+      width: 105
+      height: 77
   - scriptName: NPC1
     position:
       serializedVersion: 2
       x: 0
-      y: 0
-      width: NaN
-      height: NaN
+      y: 77
+      width: 96
+      height: 101

@@ -1,3 +1,4 @@
+using GameFramework;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -9,6 +10,7 @@ namespace Actors.Character
         public SpriteRenderer SpRenderer;
         public Rigidbody2D Rigidbody2D;
         public BaseCharacter BaseCharacter;
+        public float speed;
 
         private static readonly int isMove = Animator.StringToHash("isMove");
 
@@ -21,7 +23,7 @@ namespace Actors.Character
         // Update is called once per frame
         void Update()
         {
-            if (BaseCharacter.dataToSave.isPlayer)
+            if (BaseCharacter.dataToSave.isPlayer && Singleton.Instance.GameManager.Data.GameModeState == GameModeState.Adventure)
             {
                 if (Input.GetKey(KeyCode.D)||Input.GetKey(KeyCode.A))
                 {
@@ -41,6 +43,15 @@ namespace Actors.Character
                     CharacterMove();
                 }
             }
+            else
+            {
+                ResetAnimation();
+            }
+        }
+
+        void ResetAnimation()
+        {
+            characterAnimator.SetBool(isMove,false);
         }
 
         void CharacterMove()
@@ -49,23 +60,23 @@ namespace Actors.Character
             {
                 SpRenderer.flipX = false;
                // Rigidbody2D.velocity = new Vector2(1, 0);
-                transform.position += new Vector3(0.002f, 0, 0);
+                transform.position += new Vector3(speed, 0, 0);
             }
             if (Input.GetKey(KeyCode.A))
             {
                 SpRenderer.flipX = true;
                // Rigidbody2D.velocity = new Vector2(-1, 0);
-                transform.position += new Vector3(-0.002f, 0, 0);
+                transform.position += new Vector3(-speed, 0, 0);
             }
             if (Input.GetKey(KeyCode.W))
             {
                 //SpRenderer.flipX = true;
-                transform.position += new Vector3(0, 0, 0.002f);
+                transform.position += new Vector3(0, 0, speed);
             }
             if (Input.GetKey(KeyCode.S))
             {
                // SpRenderer.flipX = true;
-                transform.position += new Vector3(0, 0, -0.002f);
+                transform.position += new Vector3(0, 0, -speed);
             }
         }
     }
