@@ -1,6 +1,3 @@
-@if N3==true
+# N3ConditionMeet
 你好，我是N3！
-@else
-...
-@endIf
 @adventure reset:false

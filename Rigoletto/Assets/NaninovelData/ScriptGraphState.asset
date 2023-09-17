@@ -37,49 +37,56 @@ MonoBehaviour:
   - scriptName: NPC3
     position:
       serializedVersion: 2
-      x: 0
-      y: 255
-      width: 80
-      height: 77
+      x: 362
+      y: 0
+      width: 139
+      height: 101
   - scriptName: NPC4
     position:
       serializedVersion: 2
       x: 0
-      y: 332
+      y: 255
       width: 80
       height: 77
   - scriptName: N1andN2
     position:
       serializedVersion: 2
       x: 0
-      y: 409
+      y: 332
       width: 99
       height: 77
   - scriptName: N2andN3
     position:
       serializedVersion: 2
       x: 0
-      y: 486
+      y: 409
       width: 101
       height: 77
   - scriptName: N3andN4
     position:
       serializedVersion: 2
       x: 0
-      y: 563
+      y: 486
       width: 101
       height: 77
   - scriptName: N1N2N3
     position:
       serializedVersion: 2
       x: 0
-      y: 640
+      y: 563
       width: 94
       height: 77
   - scriptName: StoryTeller
     position:
       serializedVersion: 2
       x: 0
-      y: 717
+      y: 640
       width: 109
       height: 77
+  - scriptName: N3_Condition
+    position:
+      serializedVersion: 2
+      x: 139
+      y: -2
+      width: 203
+      height: 101

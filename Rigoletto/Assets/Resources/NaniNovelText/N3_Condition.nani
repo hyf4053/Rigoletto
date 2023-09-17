@@ -1,0 +1,4 @@
+@if N3==true
+;这是满足条件跳转
+@goto NPC3.N3ConditionMeet
+@stop

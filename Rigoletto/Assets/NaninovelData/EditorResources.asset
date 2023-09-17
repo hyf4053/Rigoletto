@@ -183,7 +183,7 @@ MonoBehaviour:
     - name: NPC2
       pathPrefix: Scripts
       guid: 2ea6f31a696b991419ade61cae23c4f0
-    - name: NCP3
+    - name: NPC3
       pathPrefix: Scripts
       guid: fedc665cacd6d014397549a78811b282
     - name: NPC4
@@ -204,5 +204,8 @@ MonoBehaviour:
     - name: StoryTeller
       pathPrefix: Scripts
       guid: cc8dfe2cdd4af594b96acd6624212fb1
+    - name: N3_Condition
+      pathPrefix: Scripts
+      guid: fa6a20f29ddb4a04d821ec3596fbb0eb
   - Id: Characters/993d3b89-fc9f-4ccd-936c-6f95980b0d0a
     Resources: []

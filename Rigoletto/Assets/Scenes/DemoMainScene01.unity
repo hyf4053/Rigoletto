@@ -3088,7 +3088,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f77b2b3d111e4ce4eac82049d1fc8aca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScriptName: NCP3
+  ScriptName: N3_Condition
   Label: 
 --- !u!114 &1141650456
 MonoBehaviour:
