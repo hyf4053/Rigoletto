@@ -32,16 +32,7 @@ namespace GameFramework
                 Singleton.Instance.UIManager.loadGameButton.GetComponent<Button>().interactable = Singleton.Instance.SaveLoadManager.CheckSaveExist();
             }
         }
-
-        public void LoadGameManagerData()
-        {
-            if (ES3.KeyExists("GameManagerData"))
-            {
-                var s = (GameManagerData)ES3.Load("GameManagerData");
-                Data.GameModeState = s.GameModeState;
-            }
-        }
-
+        
         /// <summary>
         /// 获取当前已加载的场景ID
         /// </summary>
@@ -53,9 +44,7 @@ namespace GameFramework
         public async Task LoadNaniNovel(GameModeState mode = GameModeState.Adventure)
         {
             //1.手动异步加载NaniNovel
-            Debug.Log("Start Init NaniNovel...");
             await RuntimeInitializer.InitializeAsync();
-            Debug.Log("NaniNovel Loaded!");
 
             if (mode == GameModeState.Adventure)
             {
@@ -64,17 +53,8 @@ namespace GameFramework
                 {
                     ResetState = false
                 };
-            
-                Debug.Log("AdvMode Switching...");
                 await switchCommand.ExecuteAsync();
-                Debug.Log("Switch To AdvMode");
             }
-
-            if (mode == GameModeState.Dialogue)
-            {
-                
-            }
-            
         }
 
         /// <summary>

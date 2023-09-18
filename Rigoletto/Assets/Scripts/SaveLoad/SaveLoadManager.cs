@@ -16,9 +16,25 @@ namespace SaveLoad
     /// </summary>
     public class SaveLoadManager : MonoBehaviour
     {
+        /// <summary>
+        /// 检查存档文件是否存在
+        /// </summary>
+        /// <returns>bool</returns>
         public bool CheckSaveExist()
         {
             return ES3.FileExists("Data.Save");
+        }
+        
+        /// <summary>
+        /// 加载GameManager的数据
+        /// </summary>
+        private void LoadGameManagerData()
+        {
+            if (ES3.KeyExists("GameManagerData"))
+            {
+                var s = (GameManagerData)ES3.Load("GameManagerData");
+                Singleton.Instance.GameManager.Data.GameModeState = s.GameModeState;
+            }
         }
 
         //存储角色数据
@@ -34,17 +50,17 @@ namespace SaveLoad
             return (CharacterDataStructure)ES3.Load(characterID);
         }
 
-        public void LoadCharacterTransform(string characterID,Transform targetTransform)
-        {
-            ES3.LoadInto("transform"+characterID,targetTransform);
-        }
-
+        /// <summary>
+        /// 根据角色ID检查存档是否存在，
+        /// TODO：需要调整角色存档模式
+        /// </summary>
+        /// <param name="characterID"></param>
+        /// <returns></returns>
         public bool CheckCharacterSave(string characterID)
         {
             return ES3.KeyExists(characterID);
         }
         
-
         /// <summary>
         /// 保存全部数据
         /// </summary>  
@@ -83,7 +99,7 @@ namespace SaveLoad
              */
             
             //先加载GameManager数据
-            Singleton.Instance.GameManager.LoadGameManagerData();
+            LoadGameManagerData();
             //然后把对话状态缓存出来
             var mode = Singleton.Instance.GameManager.Data.GameModeState;
             //重新加载目标场景
@@ -91,7 +107,7 @@ namespace SaveLoad
             
             //todo：把角色数据加载移出来
             //再次加载GameManager数据
-            Singleton.Instance.GameManager.LoadGameManagerData();
+            LoadGameManagerData();
             
             //加载NaniNovel数据（加载该数据时会自动开启对话UI）
             var naniNovelStateManager = Engine.GetService<IStateManager>();

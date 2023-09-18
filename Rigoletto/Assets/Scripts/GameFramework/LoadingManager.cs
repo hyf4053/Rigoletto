@@ -58,7 +58,7 @@ namespace GameFramework
             {
                 Singleton.Instance.CharacterManager.ConstructNewCharacter(Singleton.Instance.GameManager.SceneConfiguration.prefabNeedToSpawn[0],false,true);
             } 
-            
+           // Singleton.Instance.CharacterManager.GetComponent<ES3AutoSaveMgr>().save
         }
         
     }

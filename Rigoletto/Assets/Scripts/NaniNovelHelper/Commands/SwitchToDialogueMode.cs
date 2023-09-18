@@ -10,6 +10,7 @@ namespace NaniNovelHelper.Commands
     [CommandAlias("dialogue")]
     public class SwitchToDialogueMode : Command
     {
+        [ParameterAlias("reset")] public BooleanParameter ResetState = false;
         public string ScriptName;
 
         public string Label;
@@ -20,12 +21,18 @@ namespace NaniNovelHelper.Commands
             var inputManager = Engine.GetService<IInputManager>();
             inputManager.ProcessInput = true;
 
+            //2. 使用Script Player开始播放Nani脚本
             var scriptPlayer = Engine.GetService<IScriptPlayer>();
             scriptPlayer.PreloadAndPlayAsync(ScriptName, label: Label).Forget();
+            
+            //3. 重置对话状态（可选项）
+            if (ResetState)
+            {
+                var stateManager = Engine.GetService<IStateManager>();
+                await stateManager.ResetStateAsync();
+            }
 
             Singleton.Instance.GameManager.ChangeGameModeState(GameModeState.Dialogue);
-            //2. todo：禁用玩家的InputManager
-
         }
     }
 }
