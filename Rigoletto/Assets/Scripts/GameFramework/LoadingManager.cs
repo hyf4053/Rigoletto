@@ -23,9 +23,9 @@ namespace GameFramework
         /// 加载某个场景，该场景会按照初始编写好的状态加载
         /// </summary>
         /// <param name="sceneID"></param>
-        public void LoadScene(int sceneID)
+        public void LoadScene(int sceneID, bool isNewGame, string slotID)
         {
-            StartCoroutine(LoadSceneAsync(sceneID));
+            StartCoroutine(LoadSceneAsync(sceneID,isNewGame,slotID));
         }
         
         /// <summary>
@@ -33,7 +33,7 @@ namespace GameFramework
         /// </summary>
         /// <param name="sceneID"></param>
         /// <returns></returns>
-        IEnumerator LoadSceneAsync(int sceneID)
+        IEnumerator LoadSceneAsync(int sceneID, bool isNewGame, string slotID)
         {
             AsyncOperation operation = SceneManager.LoadSceneAsync(sceneID);
 
@@ -49,20 +49,16 @@ namespace GameFramework
             Singleton.Instance.GameManager.GetCurrentSceneID();
             //更新主相机信息
             Singleton.Instance.CameraManager.DisplaceMainCamera();
-            //TODO:Save Slot
-            /*if (ES3.FileExists("Data.Save"))
+            
+            if (isNewGame)
             {
-                Singleton.Instance.CharacterManager.ConstructCharacterFromSave();
-            }*/
-            if (true)
-            {
-                Singleton.Instance.SaveLoadManager.LoadCharacterData("A","Player");
+                Singleton.Instance.CharacterManager.ConstructNewCharacter(Singleton.Instance.GameManager.SceneConfiguration.prefabNeedToSpawn[0],false,true);
+                
             }
             else
             {
-                Singleton.Instance.CharacterManager.ConstructNewCharacter(Singleton.Instance.GameManager.SceneConfiguration.prefabNeedToSpawn[0],false,true);
+                Singleton.Instance.SaveLoadManager.LoadCharacterData(slotID,"Player");
             } 
-           // Singleton.Instance.CharacterManager.GetComponent<ES3AutoSaveMgr>().save
         }
         
     }

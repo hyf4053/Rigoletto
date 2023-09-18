@@ -17,6 +17,7 @@ namespace GameFramework
     /// </summary>
     public class GameManager : MonoBehaviour
     {
+        
         //游戏管理器数据
         public GameManagerData Data;
         

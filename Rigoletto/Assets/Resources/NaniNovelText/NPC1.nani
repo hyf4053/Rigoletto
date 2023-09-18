@@ -2,5 +2,8 @@
 NCP1: 早上好！
 Player: 早安
 @set N1=true
+@set N2=fasle
+@set N3=fasle
+@set N4=fasle
 @adventure reset:false
 @stop

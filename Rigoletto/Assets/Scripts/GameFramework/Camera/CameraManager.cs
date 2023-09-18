@@ -2,7 +2,7 @@ using System;
 using Cinemachine;
 using UnityEngine;
 
-namespace GameFramework
+namespace GameFramework.Camera
 {
     /// <summary>
     /// 相机的管理类
@@ -11,6 +11,15 @@ namespace GameFramework
     {
         //场景主相机，一般用于跟随玩家
         public CinemachineVirtualCamera mainVirtualCamera;
+
+        //UI相机
+        public UnityEngine.Camera uiCamera;
+
+        private void Start()
+        {
+            //获取UI相机
+            uiCamera = GameObject.FindWithTag("UICamera").GetComponent<UnityEngine.Camera>();
+        }
 
         //如果不是菜单场景，该函数可以用来根据tag“MainVirtualCamera”寻找该场景的相机
         //todo：该方案不够高效和精确，后续继续变更到引用

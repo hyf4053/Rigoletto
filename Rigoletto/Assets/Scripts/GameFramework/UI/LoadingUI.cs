@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace GameFramework
+namespace GameFramework.UI
 {
     public class LoadingUI : MonoBehaviour
     {

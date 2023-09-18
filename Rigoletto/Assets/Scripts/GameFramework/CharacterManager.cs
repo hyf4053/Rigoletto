@@ -27,7 +27,7 @@ namespace GameFramework
                 var temp1 = Instantiate(characterPrefab);
                 temp1.GetComponentInChildren<BaseCharacter>().DataInit();
                 spawnedCharacters.Add(temp1); 
-                Singleton.Instance.SaveLoadManager.SaveCharacterData("A",temp1.GetComponentInChildren<BaseCharacter>().dataToSave.characterID,temp1);
+               // Singleton.Instance.SaveLoadManager.SaveCharacterData("A",temp1.GetComponentInChildren<BaseCharacter>().dataToSave.characterID,temp1);
                 if(bNeedRebindCamera) Singleton.Instance.CameraManager.RebindCharacterToTheCamera(temp1,temp1,Singleton.Instance.CameraManager.mainVirtualCamera);
                 return;
             }
@@ -35,7 +35,7 @@ namespace GameFramework
             if (temp2 == null || spawnedCharacters.Contains(temp2)) return;
             temp2.GetComponentInChildren<BaseCharacter>().DataInit();
             spawnedCharacters.Add(temp2);
-            Singleton.Instance.SaveLoadManager.SaveCharacterData("A",temp2.GetComponentInChildren<BaseCharacter>().dataToSave.characterID,temp2);
+            //Singleton.Instance.SaveLoadManager.SaveCharacterData("A",temp2.GetComponentInChildren<BaseCharacter>().dataToSave.characterID,temp2);
             if(bNeedRebindCamera) Singleton.Instance.CameraManager.RebindCharacterToTheCamera(temp2,temp2,Singleton.Instance.CameraManager.mainVirtualCamera);
             return;
         }

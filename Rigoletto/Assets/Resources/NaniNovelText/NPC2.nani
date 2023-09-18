@@ -1,4 +1,4 @@
-@if (N1==true&&N3==false&&N4==false)
+@if (N1==true)
 这是N2，你刚刚和N1讲过话了吧？
 那么你接下来想和N3聊一下还是和N4聊一下呢？
 @choice "N3" set:N3=true do:"你现在可以和N3聊一下了"
