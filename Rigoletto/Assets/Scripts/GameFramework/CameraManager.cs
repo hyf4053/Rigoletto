@@ -12,13 +12,9 @@ namespace GameFramework
         //场景主相机，一般用于跟随玩家
         public CinemachineVirtualCamera mainVirtualCamera;
 
-        private void Awake()
-        {
-            //根据Tag自动分配当前场景中的主相机
-            //RedisplacementMainCamera();
-        }
-
-        public void RedisplaceMainCamera()
+        //如果不是菜单场景，该函数可以用来根据tag“MainVirtualCamera”寻找该场景的相机
+        //todo：该方案不够高效和精确，后续继续变更到引用
+        public void DisplaceMainCamera()
         {
             if (Singleton.Instance.GameManager.Data.CurrentSceneID != 0)
             {
@@ -35,9 +31,15 @@ namespace GameFramework
         public void RebindCharacterToTheCamera(GameObject character, GameObject lookAtTransform,
             CinemachineVirtualCamera cmVirtualCamera)
         {
+            //如果传入的相机对象为空，则调用绑定相机的函数，获得此场景的相机引用
             if (cmVirtualCamera == null)
             {
-                RedisplaceMainCamera();
+                DisplaceMainCamera();
+                
+#if UNITY_EDITOR
+                //该断言表示，此场景的相机无法被找到
+                System.Diagnostics.Debug.Assert(mainVirtualCamera!=null);
+#endif
                 mainVirtualCamera.Follow = character.transform;
                 mainVirtualCamera.LookAt = lookAtTransform.transform;
             }
@@ -48,7 +50,5 @@ namespace GameFramework
             }
             
         }
-        
-        
     }
 }

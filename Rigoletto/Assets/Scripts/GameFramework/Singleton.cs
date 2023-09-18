@@ -28,6 +28,7 @@ namespace GameFramework
         
         private void Awake()
         {
+            //管理可能出现的多实例的情况
             if (Instance != null && Instance != this)
             {
                 Destroy(this);
@@ -44,6 +45,7 @@ namespace GameFramework
 
         private void Start()
         {
+            //该管理类不会因为场景加载被销毁
             DontDestroyOnLoad(Instance);
         }
     }

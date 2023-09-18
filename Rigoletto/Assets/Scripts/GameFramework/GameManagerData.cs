@@ -23,7 +23,7 @@ namespace GameFramework
         //判断是否是开始的新游戏，用于决定在新游戏整个场景加载好之后进行存档
         public bool IsStartFromNewGame;
         
-        //存档ID
+        //存档ID，目前没有起到作用，该ID的作用是给存档分Slot，同时会作为保存路径
         public string SaveID;
 
         //当前游戏模式状态

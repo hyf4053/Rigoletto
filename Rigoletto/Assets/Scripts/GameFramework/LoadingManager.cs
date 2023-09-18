@@ -48,7 +48,7 @@ namespace GameFramework
             //更新场景ID
             Singleton.Instance.GameManager.GetCurrentSceneID();
             //更新主相机信息
-            Singleton.Instance.CameraManager.RedisplaceMainCamera();
+            Singleton.Instance.CameraManager.DisplaceMainCamera();
             //TODO:Save Slot
             if (ES3.FileExists("Data.Save"))
             {
