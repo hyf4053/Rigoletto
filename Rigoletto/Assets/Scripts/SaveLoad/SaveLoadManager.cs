@@ -16,6 +16,30 @@ namespace SaveLoad
     /// </summary>
     public class SaveLoadManager : MonoBehaviour
     {
+        //最大存档栏位
+        public readonly int MaxSaveSlot = 21;
+        
+        //存档栏位，用于存储存档的
+        public List<string> saveSlot;
+        
+        //当前游戏的存档位
+        public string currentSlotID;
+
+        private void Awake()
+        {
+            //初始化存档位ID
+            saveSlot = new List<string>();
+            for (int i = 0; i < MaxSaveSlot; i++)
+            {
+                if (i == 0)
+                {
+                    saveSlot.Add("AutoSave");
+                }
+                saveSlot.Add("Save"+(i+1).ToString());
+            }
+        }
+
+
         /// <summary>
         /// 检查存档文件是否存在
         /// </summary>
@@ -38,16 +62,15 @@ namespace SaveLoad
         }
 
         //存储角色数据
-        public void SaveCharacterData(string characterID, CharacterDataStructure dataStructure, Transform TargetTransform)
+        public void SaveCharacterData(string slotID,string characterID, GameObject gameObjectToSave)
         {
-            ES3.Save("transform"+characterID,TargetTransform);
-            ES3.Save(characterID,dataStructure);
+            ES3.Save(characterID,gameObjectToSave,Application.persistentDataPath+"/"+slotID+"/"+"Data.Save");
         }
 
         //加载角色数据
-        public CharacterDataStructure LoadCharacterData(string characterID)
+        public void LoadCharacterData(string slotID, string characterID)
         {
-            return (CharacterDataStructure)ES3.Load(characterID);
+            ES3.Load(characterID, Application.persistentDataPath + "/" + slotID + "/" + "Data.Save");
         }
 
         /// <summary>
@@ -72,7 +95,8 @@ namespace SaveLoad
             //存储Character Data的数据
             foreach (var spawnedCharacter in Singleton.Instance.CharacterManager.spawnedCharacters)
             {
-                ES3.Save(spawnedCharacter.GetComponentInChildren<BaseCharacter>().dataToSave.characterID,spawnedCharacter.GetComponentInChildren<BaseCharacter>().dataToSave);
+                //ES3.Save(spawnedCharacter.GetComponentInChildren<BaseCharacter>().dataToSave.characterID,spawnedCharacter.GetComponentInChildren<BaseCharacter>().dataToSave);
+                SaveCharacterData("A",spawnedCharacter.GetComponentInChildren<BaseCharacter>().dataToSave.characterID,spawnedCharacter);
             }
             
             //游戏内容储存完之后，再保存一次NaniNovel的进度
@@ -103,9 +127,9 @@ namespace SaveLoad
             //然后把对话状态缓存出来
             var mode = Singleton.Instance.GameManager.Data.GameModeState;
             //重新加载目标场景
-            Singleton.Instance.UIManager.StartNewGameWithMode(Singleton.Instance.GameManager.Data.CurrentSceneID,mode);
+            //Singleton.Instance.UIManager.StartNewGameWithMode(Singleton.Instance.GameManager.Data.CurrentSceneID,mode);
+            Singleton.Instance.LoadingManager.LoadScene(1);
             
-            //todo：把角色数据加载移出来
             //再次加载GameManager数据
             LoadGameManagerData();
             

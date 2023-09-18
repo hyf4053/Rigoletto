@@ -50,9 +50,13 @@ namespace GameFramework
             //更新主相机信息
             Singleton.Instance.CameraManager.DisplaceMainCamera();
             //TODO:Save Slot
-            if (ES3.FileExists("Data.Save"))
+            /*if (ES3.FileExists("Data.Save"))
             {
                 Singleton.Instance.CharacterManager.ConstructCharacterFromSave();
+            }*/
+            if (true)
+            {
+                Singleton.Instance.SaveLoadManager.LoadCharacterData("A","Player");
             }
             else
             {
