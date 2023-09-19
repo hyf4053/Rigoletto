@@ -1,5 +1,6 @@
 using GameFramework.Camera;
 using GameFramework.SaveLoad;
+using GameFramework.StateMachine;
 using GameFramework.UI;
 using UnityEngine;
 
@@ -31,6 +32,9 @@ namespace GameFramework
         //调试类
         public DebugHelper.DebugHelper DebugHelper { get; private set; }
         
+        //状态机管理类
+        public StateMachineManager StateMachineManager  { get; private set; }
+        
         private void Awake()
         {
             //管理可能出现的多实例的情况
@@ -47,6 +51,7 @@ namespace GameFramework
             CameraManager = GetComponentInChildren<CameraManager>();
             LoadingManager = GetComponentInChildren<LoadingManager>();
             DebugHelper = GetComponentInChildren<DebugHelper.DebugHelper>();
+            StateMachineManager = GetComponentInChildren<StateMachineManager>();
         }
 
         private void Start()

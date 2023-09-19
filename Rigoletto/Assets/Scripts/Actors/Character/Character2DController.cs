@@ -23,33 +23,33 @@ namespace Actors.Character
         // Update is called once per frame
         void Update()
         {
-            if (BaseCharacter.dataToSave.isPlayer /*&& Singleton.Instance.GameManager.Data.GameModeState == GameModeState.Adventure*/)
+            /*if (BaseCharacter.dataToSave.isPlayer /*&& Singleton.Instance.GameManager.Data.GameModeState == GameModeState.Adventure#1#)
             {
                 if (Input.GetKey(KeyCode.D)||Input.GetKey(KeyCode.A))
                 {
                     characterAnimator.SetBool(isMove,true);
-                    CharacterMove();
+                   // CharacterMove();
                 }
 
                 if (!Input.GetKey(KeyCode.D)&&!Input.GetKey(KeyCode.A))
                 {
                     characterAnimator.SetBool(isMove,false);
-                    Rigidbody2D.velocity = Vector2.zero;
+                   // Rigidbody2D.velocity = Vector2.zero;
                 }
 
                 if (Input.GetKey(KeyCode.W)||Input.GetKey(KeyCode.S))
                 {
                     characterAnimator.SetBool(isMove,true);
-                    CharacterMove();
+                   //a CharacterMove();
                 }
             }
             else
             {
                 ResetAnimation();
-            }
+            }*/
         }
 
-        void ResetAnimation()
+        public void ResetAnimation()
         {
             characterAnimator.SetBool(isMove,false);
         }
@@ -78,6 +78,32 @@ namespace Actors.Character
                // SpRenderer.flipX = true;
                 transform.position += new Vector3(0, 0, -speed);
             }
+        }
+
+        public void MoveLeft()
+        {
+            characterAnimator.SetBool(isMove,true);
+            SpRenderer.flipX = true;
+            transform.position += new Vector3(-speed, 0, 0);
+        }
+
+        public void MoveRight()
+        {
+            characterAnimator.SetBool(isMove,true);
+            SpRenderer.flipX = false;
+            transform.position += new Vector3(speed, 0, 0);
+        }
+
+        public void MoveUp()
+        {
+            characterAnimator.SetBool(isMove,true);
+            transform.position += new Vector3(0, 0, speed);
+        }
+
+        public void MoveDown()
+        {
+            characterAnimator.SetBool(isMove,true);
+            transform.position += new Vector3(0, 0, -speed);
         }
     }
 }

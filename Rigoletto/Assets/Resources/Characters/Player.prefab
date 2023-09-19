@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3528222369192864518}
   - component: {fileID: 661996872552726315}
   - component: {fileID: 8736071757687622788}
+  - component: {fileID: 6724751094280576118}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -217,26 +218,27 @@ MonoBehaviour:
     _Keys:
     - {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
     - {fileID: 11500000, guid: 2d639df3e881b47769889e85528e24b7, type: 3}
-    - {fileID: 3528222369192864518}
+    - {fileID: 5296972447969077645}
+    - {fileID: 774320028088599576}
+    - {fileID: 6595422609999225242}
     - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - {fileID: 11500000, guid: 9cfcc9ceea0bf419cb3bcaf548c2600d, type: 3}
     - {fileID: 11500000, guid: 1c47d1e7ef804994ea23fe94865111c1, type: 3}
-    - {fileID: 4957580077080438971}
+    - {fileID: 992194074796721922}
     - {fileID: 6391188717786206427}
-    - {fileID: 774320028088599576}
-    - {fileID: 6595422609999225242}
     - {fileID: 11500000, guid: baff8732cd3074ef88b34f9cc487846d, type: 3}
     - {fileID: 11500000, guid: 78ec757fc93e5457d89944ddfbb1eff0, type: 3}
     - {fileID: 8524850759829750156}
-    - {fileID: 661996872552726315}
+    - {fileID: 3528222369192864518}
+    - {fileID: 6724751094280576118}
     - {fileID: 1450032746138320247}
+    - {fileID: 11500000, guid: 2fa852c8b4b5a43bebad2f07e2a8a4f8, type: 3}
+    - {fileID: 661996872552726315}
     - {fileID: 8917131669030487374}
     - {fileID: 8736071757687622788}
-    - {fileID: 992194074796721922}
-    - {fileID: 5296972447969077645}
-    - {fileID: 7400000, guid: ca7ba9e485c4fd94eac2d0dc19c00652, type: 2}
-    - {fileID: 7400000, guid: 4f3ef8832bb7ed54f8a85a766b6d8d88, type: 2}
+    - {fileID: 4957580077080438971}
     - {fileID: 11400000, guid: 101089276916c4039a546a2983f4c7b0, type: 2}
+    - {fileID: 7400000, guid: ca7ba9e485c4fd94eac2d0dc19c00652, type: 2}
     - {fileID: 1223252352, guid: 1242f6dd4b8d2904e8d3841adf9392f9, type: 3}
     - {fileID: 7400000, guid: 03486bab174bc49d88e5b5a35481e67a, type: 2}
     - {fileID: 9100000, guid: ed662ceafcdbfef41b0e31f8f6058323, type: 2}
@@ -259,7 +261,38 @@ MonoBehaviour:
     - {fileID: -1030741079, guid: 3b215ba97eaa30847b01e6b474cd3ec1, type: 3}
     - {fileID: 2033929124, guid: 3b215ba97eaa30847b01e6b474cd3ec1, type: 3}
     - {fileID: -1250604283, guid: 3b215ba97eaa30847b01e6b474cd3ec1, type: 3}
-    _Values: 306d98aa76a2e30f8c272826396fd93a095df302253c5534f68dec0f0fa6864fd381682a0280f0712f9a60eacf0f853016c3ac28f15af96391fc2ba0c992c90ce99b4b164a2bff1a8c10d64b4decb35060270960f0109506d8c218e8e97e25507aaf5ff42dd9e73d646cd26b5b9b7b153c6d3635af678c7f6824788baab2f6663e63636534f4137ac0343ba21cff9e3c4702ac7c47f0a11fc32073f69ea36c1662382df73815e147a6448b84d4159c673d4b2d52a18d514dc243a214811cdb1dc7243fe3d1a60331df9bde7483d90c26432546ac89e68a2ae7e035f473cdc63d20a84cf855803869b904cec3943a2e63b037a9599c785952af6afcf1710fbe549de4ab2472ec2f3d13220c7ae83869210e99a4aa7620d958b006573f82d525373ddd9f871aac2a64991893407a2cc47701dae3d86a13de7d0a52736b94efbb3efdd43c0b99e1076291bfefa27366227b41e03da8f24dcc2a01de8338c7413055
+    - {fileID: 7400000, guid: 4f3ef8832bb7ed54f8a85a766b6d8d88, type: 2}
+    _Values: 306d98aa76a2e30f8c272826396fd93a4702ac7c47f0a11fe99b4b164a2bff1a8c10d64b4decb350f68dec0f0fa6864fd381682a0280f0712f9a60eacf0f8530c0343ba21cff9e3c91fc2ba0c992c90c60270960f0109506d8c218e8e97e25507aaf5ff42dd9e73d095df302253c5534864b7d46b66103353c6d3635af678c7ffe8c18689dd75154646cd26b5b9b7b156824788baab2f6663e63636534f4137a16c3ac28f15af963a6448b84d4159c67c32073f69ea36c163d4b2d52a18d514dc243a214811cdb1dc7243fe3d1a60331df9bde7483d90c26432546ac89e68a2ae7e035f473cdc63d20a84cf855803869b904cec3943a2e63b037a9599c785952af6afcf1710fbe549de4ab2472ec2f3d13220c7ae83869210e99a4aa7620d958b006573f82d525373ddd9f871aac2a64991893407a2cc47701dae3d86a13de7d0a52736b94efbb3efdd43c0b99e1076291bfefa27366227b41e03da8f24dcc2a01de8338c741305562382df73815e147
+--- !u!114 &6724751094280576118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774320028088599576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa852c8b4b5a43bebad2f07e2a8a4f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onStateEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onStateExit:
+    m_PersistentCalls:
+      m_Calls: []
+  initState: {fileID: 11400000, guid: d5e063db7c02a4e368ddb560474ea3e6, type: 2}
+  prevState: {fileID: 0}
+  currentState: {fileID: 0}
+  Idle: {fileID: 11400000, guid: d5e063db7c02a4e368ddb560474ea3e6, type: 2}
+  isIdle: 0
+  controller: {fileID: 3528222369192864518}
+  Move: {fileID: 11400000, guid: ef06e109331344885b0e2fae1c1b7471, type: 2}
+  forwardPressed: 0
+  backwardPressed: 0
+  leftwardPressed: 0
+  rightwardPressed: 0
+  inputRecord: 
 --- !u!1 &4957580077080438971
 GameObject:
   m_ObjectHideFlags: 0
