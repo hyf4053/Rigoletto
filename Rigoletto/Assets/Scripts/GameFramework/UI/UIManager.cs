@@ -120,6 +120,8 @@ namespace GameFramework.UI
         /// <param name="mode">初始化时游戏模式</param>
         private async void StartNewGameWithMode(int sceneID, bool isNewGame, string slotID,GameModeState mode = GameModeState.Adventure)
         {
+            //目前考虑这个用作debug的栏位暂存
+            Singleton.Instance.SaveLoadManager.currentSlotID = slotID;
             loadingScreen.SetActive(true);
             await Task.Delay(2000);
             LoadScene(sceneID,isNewGame,slotID);
@@ -136,6 +138,9 @@ namespace GameFramework.UI
         private async void LoadGameWithMode(int sceneID, string slotID,
             GameModeState mode = GameModeState.Adventure)
         {
+            //目前考虑这个用作debug的栏位暂存
+            Singleton.Instance.SaveLoadManager.currentSlotID = slotID;
+            
             loadingScreen.SetActive(true);
             await Task.Delay(2000);
             LoadScene(sceneID,false,slotID);

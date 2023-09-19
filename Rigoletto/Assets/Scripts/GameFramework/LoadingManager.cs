@@ -7,18 +7,6 @@ namespace GameFramework
 {
     public class LoadingManager : MonoBehaviour
     {
-        // Start is called before the first frame update
-        void Start()
-        {
-        
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-        
-        }
-        
         /// <summary>
         /// 加载某个场景，该场景会按照初始编写好的状态加载
         /// </summary>
@@ -42,7 +30,7 @@ namespace GameFramework
                 yield return null;
             }
             //加载完成后, 搜寻新场景中的配置信息表
-            Singleton.Instance.GameManager.SceneConfiguration = FindObjectOfType<SceneConfiguration>();
+            Singleton.Instance.GameManager.sceneConfiguration = FindObjectOfType<SceneConfiguration>();
             //卸载并清空之前已经加载的实例
             Singleton.Instance.CharacterManager.ClearSpawnedCharacterList();
             //更新场景ID
@@ -52,7 +40,7 @@ namespace GameFramework
             
             if (isNewGame)
             {
-                Singleton.Instance.CharacterManager.ConstructNewCharacter(Singleton.Instance.GameManager.SceneConfiguration.prefabNeedToSpawn[0],false,true);
+                Singleton.Instance.CharacterManager.ConstructNewCharacter(Singleton.Instance.GameManager.sceneConfiguration.prefabNeedToSpawn[0],false,true);
                 
             }
             else
