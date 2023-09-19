@@ -1,10 +1,12 @@
+using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
+using Actors.Character;
 using UnityEngine;
 using Naninovel;
 using NaniNovelHelper.Commands;
 using SceneConfig;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 
@@ -17,16 +19,16 @@ namespace GameFramework
     {
         
         //游戏管理器数据
-        [FormerlySerializedAs("Data")] public GameManagerData data;
+        public GameManagerData Data;
         
         //用于获取当前场景的默认配置表信息，然后会和存档中对比是否有同ID的配置表，如果有，则更新数据到场景配置表中并根据最新的配置表生成场景内容
-        [FormerlySerializedAs("SceneConfiguration")] public SceneConfiguration sceneConfiguration;
+        public SceneConfiguration SceneConfiguration;
 
         //该事件只在主菜单的时候会触发，主要用于主菜单的一些初始化的时候的设置
         private void Awake()
         {
             GetCurrentSceneID();
-            if (Singleton.Instance != null && data.CurrentSceneID == 0)
+            if (Singleton.Instance != null && Data.CurrentSceneID == 0)
             {
                 Singleton.Instance.UIManager.loadGameButton.GetComponent<Button>().interactable = Singleton.Instance.SaveLoadManager.CheckSaveExist();
             }
@@ -37,7 +39,7 @@ namespace GameFramework
         /// </summary>
         public void GetCurrentSceneID()
         {
-            data.CurrentSceneID = SceneManager.GetActiveScene().buildIndex;
+            Data.CurrentSceneID = SceneManager.GetActiveScene().buildIndex;
         }
 
         public async Task LoadNaniNovel(GameModeState mode = GameModeState.Adventure)
@@ -62,7 +64,7 @@ namespace GameFramework
         /// <param name="newState">更新后的状态</param>
         public void ChangeGameModeState(GameModeState newState)
         {
-            data.GameModeState = newState;
+            Data.GameModeState = newState;
         }
         
         /// <summary>

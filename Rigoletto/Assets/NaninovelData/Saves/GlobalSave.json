@@ -7,9 +7,9 @@
             "Naninovel.UnlockableManager+GlobalState, Elringus.Naninovel.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
         ],
         "values": [
-            "{\"LastSaveWasQuick\":false}",
+            "{\"LastSaveWasQuick\":true}",
             "{\"GlobalVariableMap\":{\"keys\":[\"G_N1\",\"G_N2\",\"G_N3\",\"G_N4\"],\"values\":[\"True\",\"False\",\"False\",\"False\"]}}",
-            "{\"PlayedScriptRegister\":{\"playedScripts\":[{\"ScriptName\":\"Lanmaomi\",\"PlayedIndexes\":[{\"startIndex\":0,\"endIndex\":1}]},{\"ScriptName\":\"NPC1\",\"PlayedIndexes\":[{\"startIndex\":0,\"endIndex\":6}]},{\"ScriptName\":\"StoryTeller\",\"PlayedIndexes\":[{\"startIndex\":0,\"endIndex\":1}]},{\"ScriptName\":\"NPC2\",\"PlayedIndexes\":[{\"startIndex\":0,\"endIndex\":6},{\"startIndex\":13,\"endIndex\":14}]},{\"ScriptName\":\"N3_Condition\",\"PlayedIndexes\":[{\"startIndex\":0,\"endIndex\":1}]},{\"ScriptName\":\"NPC3\",\"PlayedIndexes\":[{\"startIndex\":0,\"endIndex\":1}]}]}}",
+            "{\"PlayedScriptRegister\":{\"playedScripts\":[{\"ScriptName\":\"Lanmaomi\",\"PlayedIndexes\":[{\"startIndex\":0,\"endIndex\":1}]},{\"ScriptName\":\"NPC1\",\"PlayedIndexes\":[{\"startIndex\":0,\"endIndex\":3}]},{\"ScriptName\":\"StoryTeller\",\"PlayedIndexes\":[{\"startIndex\":0,\"endIndex\":1}]},{\"ScriptName\":\"NPC2\",\"PlayedIndexes\":[{\"startIndex\":0,\"endIndex\":6},{\"startIndex\":13,\"endIndex\":14}]},{\"ScriptName\":\"N3_Condition\",\"PlayedIndexes\":[{\"startIndex\":0,\"endIndex\":1}]},{\"ScriptName\":\"NPC3\",\"PlayedIndexes\":[{\"startIndex\":0,\"endIndex\":1}]}]}}",
             "{\"UnlockablesMap\":{\"keys\":[],\"values\":[]}}"
         ]
     }

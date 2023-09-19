@@ -25,7 +25,7 @@ namespace GameFramework.Camera
         //todo：该方案不够高效和精确，后续继续变更到引用
         public void DisplaceMainCamera()
         {
-            if (Singleton.Instance.GameManager.data.CurrentSceneID != 0)
+            if (Singleton.Instance.GameManager.Data.CurrentSceneID != 0)
             {
                 mainVirtualCamera = GameObject.FindWithTag("MainVirtualCamera").GetComponent<CinemachineVirtualCamera>();
             }
