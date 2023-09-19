@@ -1,14 +1,10 @@
-using System;
 using System.Collections.Generic;
 using Actors.Character;
-using GameFramework;
 using Naninovel;
 using Naninovel.Commands;
-using NaniNovelHelper.Commands;
-using SceneConfig;
 using UnityEngine;
 
-namespace SaveLoad
+namespace GameFramework.SaveLoad
 {
     /// <summary>
     /// 保存加载类
@@ -19,7 +15,7 @@ namespace SaveLoad
         #region PRE-DEFINDED-DATA
 
         //最大存档栏位
-        private readonly int MaxSaveSlot = 21;
+        private const int MaxSaveSlot = 21;
 
         #endregion
         
@@ -76,12 +72,12 @@ namespace SaveLoad
             if (ES3.KeyExists("GameManagerData"))
             {
                 var s = (GameManagerData)ES3.Load("GameManagerData");
-                Singleton.Instance.GameManager.Data.GameModeState = s.GameModeState;
+                Singleton.Instance.GameManager.data.GameModeState = s.GameModeState;
             }
         }
 
         //存储角色数据
-        public void SaveCharacterData(string slotID,string characterID, GameObject gameObjectToSave)
+        private void SaveCharacterData(string slotID,string characterID, GameObject gameObjectToSave)
         {
             ES3.Save(characterID,gameObjectToSave,Application.persistentDataPath+"/"+slotID+"/"+"Data.Save");
         }
@@ -108,6 +104,35 @@ namespace SaveLoad
         {
             return ES3.KeyExists(characterID);
         }
+
+        /// <summary>
+        /// 自动存档函数，会自动存进唯一的一个自动存档的档位
+        /// TODO：有待验证是否自动存档是否完整处理好了覆盖之类的问题
+        /// </summary>
+        public void AutoSaveAllData()
+        {
+            SaveAllData("AutoSave");
+        }
+
+        /// <summary>
+        /// 同步NaniNovel数据到对应的存档槽位
+        /// </summary>
+        /// <param name="slotID"></param>
+        public void SaveSyncNaniNovelData(string slotID)
+        {
+            var naniNovelStateManager = Engine.GetService<IStateManager>();
+            naniNovelStateManager.SaveGameAsync(slotID);
+        }
+
+        /// <summary>
+        /// 加载对应存档位的NaniNovel数据
+        /// </summary>
+        /// <param name="slotID"></param>
+        public void LoadSyncNaniNovelData(string slotID)
+        {
+            var naniNovelStateManager = Engine.GetService<IStateManager>();
+            naniNovelStateManager.LoadGameAsync(slotID);
+        }
         
         /// <summary>
         /// 保存全部数据
@@ -115,7 +140,7 @@ namespace SaveLoad
         public void SaveAllData(string slotID)
         {
             //存储GameManager Data的数据
-            ES3.Save("GameManagerData",Singleton.Instance.GameManager.Data);
+            ES3.Save("GameManagerData",Singleton.Instance.GameManager.data);
             
             //存储Character Data的数据
             foreach (var spawnedCharacter in Singleton.Instance.CharacterManager.spawnedCharacters)
@@ -124,8 +149,7 @@ namespace SaveLoad
             }
             
             //游戏内容储存完之后，再保存一次NaniNovel的进度
-            var naniNovelStateManager = Engine.GetService<IStateManager>();
-            naniNovelStateManager.QuickSaveAsync();
+            SaveSyncNaniNovelData(slotID);
         }
 
         /// <summary>
@@ -149,15 +173,14 @@ namespace SaveLoad
             //先加载GameManager数据
             LoadGameManagerData();
             //然后把对话状态缓存出来
-            var mode = Singleton.Instance.GameManager.Data.GameModeState;
+            var mode = Singleton.Instance.GameManager.data.GameModeState;
             //重新加载目标场景
             Singleton.Instance.LoadingManager.LoadScene(sceneID,false,slotID);
             //再次加载GameManager数据
             LoadGameManagerData();
             //加载NaniNovel数据（加载该数据时会自动开启对话UI）
-            var naniNovelStateManager = Engine.GetService<IStateManager>();
-            await naniNovelStateManager.QuickLoadAsync();
-            if (Singleton.Instance.GameManager.Data.GameModeState == GameModeState.Adventure)
+            LoadSyncNaniNovelData(slotID);
+            if (Singleton.Instance.GameManager.data.GameModeState == GameModeState.Adventure)
             {
                 //隐藏对话UI
                 var hidePrinter = new HidePrinter();

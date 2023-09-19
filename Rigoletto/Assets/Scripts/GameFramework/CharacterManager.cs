@@ -27,7 +27,6 @@ namespace GameFramework
                 var temp1 = Instantiate(characterPrefab);
                 temp1.GetComponentInChildren<BaseCharacter>().DataInit();
                 spawnedCharacters.Add(temp1); 
-               // Singleton.Instance.SaveLoadManager.SaveCharacterData("A",temp1.GetComponentInChildren<BaseCharacter>().dataToSave.characterID,temp1);
                 if(bNeedRebindCamera) Singleton.Instance.CameraManager.RebindCharacterToTheCamera(temp1,temp1,Singleton.Instance.CameraManager.mainVirtualCamera);
                 return;
             }
@@ -35,27 +34,7 @@ namespace GameFramework
             if (temp2 == null || spawnedCharacters.Contains(temp2)) return;
             temp2.GetComponentInChildren<BaseCharacter>().DataInit();
             spawnedCharacters.Add(temp2);
-            //Singleton.Instance.SaveLoadManager.SaveCharacterData("A",temp2.GetComponentInChildren<BaseCharacter>().dataToSave.characterID,temp2);
             if(bNeedRebindCamera) Singleton.Instance.CameraManager.RebindCharacterToTheCamera(temp2,temp2,Singleton.Instance.CameraManager.mainVirtualCamera);
-            return;
-        }
-
-        public void ConstructCharacterFromSave()
-        {
-            foreach (var prefab in Singleton.Instance.GameManager.SceneConfiguration.prefabNeedToSpawn)
-            {
-                if (Singleton.Instance.SaveLoadManager.CheckCharacterSave(prefab.GetComponentInChildren<BaseCharacter>()
-                        .dataPredefined.data.characterID))
-                {
-                    var temp2 = Instantiate(prefab);
-                    var s = (CharacterDataStructure)ES3.Load(prefab.GetComponentInChildren<BaseCharacter>().dataPredefined.data.characterID);
-                    temp2.GetComponentInChildren<BaseCharacter>().LoadData(s);
-                    /*Singleton.Instance.SaveLoadManager.LoadCharacterTransform(prefab
-                            .GetComponentInChildren<BaseCharacter>().dataPredefined.data.characterID,temp2.transform);*/
-                    spawnedCharacters.Add(temp2);
-                    Singleton.Instance.CameraManager.RebindCharacterToTheCamera(temp2,temp2,Singleton.Instance.CameraManager.mainVirtualCamera);
-                }
-            }
         }
 
         /// <summary>
