@@ -55,24 +55,37 @@ namespace GameFramework.StateMachine
             if (Input.GetKeyDown(KeyCode.A))
             {
                 inputRecord.Add(KeyCode.A);
+                
+                //如果不处于移动状态
                 if (currentState != Move)
                 {
+                    //该函数会尝试改变状态
                     TransitionTo(Move);
-                    isIdle = false;
+                    //isIdle = false;
+                    //记录按键状态，同时记录按键是否有被释放
                     leftwardPressed = true;
                     leftwardReleased = false;
+                    
+                    //如果此时对位键有被按下，则表示在按下该键前，对位键已经按下了，此时用变更对位按键的状态
+                    if (rightwardPressed)
+                    {
+                        rightwardPressed = false;
+                    }
                 }
-
+                else
+                //如果已经处于移动状态，则无需改变状态，记录按键状态，同时记录按键是否有被释放
                 if (currentState == Move)
                 {
                     leftwardPressed = true;
                     leftwardReleased = false;
+                    
+                    //如果此时对位键有被按下，则表示在按下该键前，对位键已经按下了，此时用变更对位按键的状态
+                    if (rightwardPressed)
+                    {
+                        rightwardPressed = false;
+                    }
                 }
-
-                if (rightwardPressed)
-                {
-                    rightwardPressed = false;
-                }
+                
             }
 
             if (Input.GetKeyDown(KeyCode.D))
@@ -261,11 +274,7 @@ namespace GameFramework.StateMachine
             {
                 controller.MoveLeft();
             }
-
-            if (isIdle)
-            {
-                
-            }
+            #region Debug Display
 
             if (backwardReleased)
             {
@@ -306,18 +315,30 @@ namespace GameFramework.StateMachine
             {
                 h.DPress();
             }
-            
+
+            #endregion
         }
 
 
+        
         public override void TransitionTo(State targetState)
         {
-            OnStateEnter();
+            //检验当前状态，是否可以转变到目标状态
             if (currentState.statesCanTransitTo.Contains(targetState))
             {
                 prevState = currentState;
                 OnStateExit();
                 currentState = targetState;
+                OnStateEnter();
+            }
+            else
+            {
+                return;
+            }
+            //能运行到这里证明状态已经切换完成
+            if (targetState == Move)
+            {
+                isIdle = false;
             }
 
             if (targetState == Idle)
