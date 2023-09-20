@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="80a6ca43-45d9-4549-98fe-3933e8749509" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Rigoletto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rigoletto/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Character/Character2DController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Character/Character2DController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3GlobalReferences.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3GlobalReferences.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Characters/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Characters/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DemoMainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DemoMainMenu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameFramework/StateMachine/CharacterStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameFramework/StateMachine/CharacterStateMachine.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +50,7 @@
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -104,7 +107,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1695175403509</updated>
-      <workItem from="1695175405782" duration="2129000" />
+      <workItem from="1695175405782" duration="3800000" />
     </task>
     <servers />
   </component>

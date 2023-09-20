@@ -26,7 +26,6 @@ namespace GameFramework.StateMachine
         
         #endregion
         
-        
         #region Move State
 
         public State Move;
@@ -37,6 +36,8 @@ namespace GameFramework.StateMachine
         public List<KeyCode> inputRecord;
         
         #endregion
+        
+        
 
         public DebugHelper.DebugHelper h;
 
