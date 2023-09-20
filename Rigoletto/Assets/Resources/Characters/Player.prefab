@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 661996872552726315}
   - component: {fileID: 8736071757687622788}
   - component: {fileID: 6724751094280576118}
+  - component: {fileID: 1333092559194585823}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -156,6 +157,7 @@ MonoBehaviour:
   Rigidbody2D: {fileID: 992194074796721922}
   BaseCharacter: {fileID: 0}
   speed: 0.004
+  fsm: {fileID: 1333092559194585823}
 --- !u!61 &661996872552726315
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -216,27 +218,32 @@ MonoBehaviour:
   prefabId: 4294820425344568525
   localRefs:
     _Keys:
-    - {fileID: 11500000, guid: 2d639df3e881b47769889e85528e24b7, type: 3}
-    - {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
     - {fileID: 11500000, guid: 29ffc286b58cb44389f80e3060feba7e, type: 3}
-    - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-    - {fileID: 11500000, guid: 9cfcc9ceea0bf419cb3bcaf548c2600d, type: 3}
-    - {fileID: 11500000, guid: 2fa852c8b4b5a43bebad2f07e2a8a4f8, type: 3}
+    - {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+    - {fileID: 6595422609999225242}
     - {fileID: 11500000, guid: 1c47d1e7ef804994ea23fe94865111c1, type: 3}
+    - {fileID: 6391188717786206427}
+    - {fileID: 11500000, guid: 2d639df3e881b47769889e85528e24b7, type: 3}
+    - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+    - {fileID: 8736071757687622788}
+    - {fileID: 661996872552726315}
+    - {fileID: 11500000, guid: 9cfcc9ceea0bf419cb3bcaf548c2600d, type: 3}
+    - {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+    - {fileID: 992194074796721922}
     - {fileID: 11500000, guid: baff8732cd3074ef88b34f9cc487846d, type: 3}
     - {fileID: 11500000, guid: 78ec757fc93e5457d89944ddfbb1eff0, type: 3}
-    - {fileID: 8736071757687622788}
-    - {fileID: 11400000, guid: d5e063db7c02a4e368ddb560474ea3e6, type: 2}
-    - {fileID: 11400000, guid: 101089276916c4039a546a2983f4c7b0, type: 2}
-    - {fileID: 8524850759829750156}
-    - {fileID: 3528222369192864518}
-    - {fileID: 992194074796721922}
-    - {fileID: 8917131669030487374}
-    - {fileID: 6391188717786206427}
+    - {fileID: 1333092559194585823}
     - {fileID: 774320028088599576}
-    - {fileID: 4957580077080438971}
-    - {fileID: 1450032746138320247}
+    - {fileID: 8524850759829750156}
     - {fileID: 5296972447969077645}
+    - {fileID: 6724751094280576118}
+    - {fileID: 3528222369192864518}
+    - {fileID: 4957580077080438971}
+    - {fileID: 11500000, guid: 2fa852c8b4b5a43bebad2f07e2a8a4f8, type: 3}
+    - {fileID: 8917131669030487374}
+    - {fileID: 11400000, guid: ef06e109331344885b0e2fae1c1b7471, type: 2}
+    - {fileID: 11400000, guid: 101089276916c4039a546a2983f4c7b0, type: 2}
+    - {fileID: 11400000, guid: d5e063db7c02a4e368ddb560474ea3e6, type: 2}
     - {fileID: 7400000, guid: ca7ba9e485c4fd94eac2d0dc19c00652, type: 2}
     - {fileID: 1223252352, guid: 1242f6dd4b8d2904e8d3841adf9392f9, type: 3}
     - {fileID: 7400000, guid: 03486bab174bc49d88e5b5a35481e67a, type: 2}
@@ -252,8 +259,6 @@ MonoBehaviour:
     - {fileID: -1644886326, guid: 1242f6dd4b8d2904e8d3841adf9392f9, type: 3}
     - {fileID: -1603998029, guid: 1242f6dd4b8d2904e8d3841adf9392f9, type: 3}
     - {fileID: 2800000, guid: 3b215ba97eaa30847b01e6b474cd3ec1, type: 3}
-    - {fileID: 6724751094280576118}
-    - {fileID: 6595422609999225242}
     - {fileID: -388810672, guid: 3b215ba97eaa30847b01e6b474cd3ec1, type: 3}
     - {fileID: -556405205, guid: 3b215ba97eaa30847b01e6b474cd3ec1, type: 3}
     - {fileID: -1381119299, guid: 3b215ba97eaa30847b01e6b474cd3ec1, type: 3}
@@ -263,9 +268,8 @@ MonoBehaviour:
     - {fileID: 2033929124, guid: 3b215ba97eaa30847b01e6b474cd3ec1, type: 3}
     - {fileID: -1250604283, guid: 3b215ba97eaa30847b01e6b474cd3ec1, type: 3}
     - {fileID: 7400000, guid: 4f3ef8832bb7ed54f8a85a766b6d8d88, type: 2}
-    - {fileID: 661996872552726315}
-    - {fileID: 11400000, guid: ef06e109331344885b0e2fae1c1b7471, type: 2}
-    _Values: 8c272826396fd93a306d98aa76a2e30f1f904eac1a74a304f68dec0f0fa6864fd381682a0280f071fe8c18689dd751542f9a60eacf0f853060270960f0109506d8c218e8e97e25503e63636534f4137a383a0cc388760341a6448b84d4159c677aaf5ff42dd9e73d095df302253c5534c0343ba21cff9e3c6824788baab2f66691fc2ba0c992c90ce99b4b164a2bff1a16c3ac28f15af9633c6d3635af678c7f4702ac7c47f0a11fc32073f69ea36c163d4b2d52a18d514dc243a214811cdb1dc7243fe3d1a60331df9bde7483d90c26432546ac89e68a2ae7e035f473cdc63d20a84cf855803869b904cec3943a2e63b037a9599c785952af6afcf1710fbe549de4ab2472ec2f3d13220c7ae83869210e99a4aa7620d958b006573f82d52537864b7d46b66103358c10d64b4decb3503ddd9f871aac2a64991893407a2cc47701dae3d86a13de7d0a52736b94efbb3efdd43c0b99e1076291bfefa27366227b41e03da8f24dcc2a01de8338c741305562382df73815e147646cd26b5b9b7b15b56317bd2443d177
+    - {fileID: 1450032746138320247}
+    _Values: 1f904eac1a74a304306d98aa76a2e30f8c10d64b4decb3502f9a60eacf0f853091fc2ba0c992c90c8c272826396fd93af68dec0f0fa6864f3e63636534f4137a646cd26b5b9b7b15d381682a0280f071df6ddacea83d1043c0343ba21cff9e3c60270960f0109506d8c218e8e97e2550a5b091d76aca997be99b4b164a2bff1a7aaf5ff42dd9e73d4702ac7c47f0a11f864b7d46b6610335095df302253c553416c3ac28f15af963fe8c18689dd751546824788baab2f666b56317bd2443d177a6448b84d4159c67383a0cc388760341c32073f69ea36c163d4b2d52a18d514dc243a214811cdb1dc7243fe3d1a60331df9bde7483d90c26432546ac89e68a2ae7e035f473cdc63d20a84cf855803869b904cec3943a2e63b037a9599c785952af6afcf1710fbe549de4ab2472ec2f3d13220c7ae83869210e99a4aa7620d958b006573f82d525373ddd9f871aac2a64991893407a2cc47701dae3d86a13de7d0a52736b94efbb3efdd43c0b99e1076291bfefa27366227b41e03da8f24dcc2a01de8338c741305562382df73815e1473c6d3635af678c7f
 --- !u!114 &6724751094280576118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -273,7 +277,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774320028088599576}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fa852c8b4b5a43bebad2f07e2a8a4f8, type: 3}
   m_Name: 
@@ -301,6 +305,947 @@ MonoBehaviour:
   rightwardReleased: 0
   inputRecord: 
   h: {fileID: 0}
+--- !u!114 &1333092559194585823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774320028088599576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    dataVersion: 2
+    usedInTemplate: {fileID: 0}
+    name: PlayerFSM
+    startState: Idle
+    states:
+    - name: Idle
+      description: 
+      colorIndex: 6
+      position:
+        serializedVersion: 2
+        x: 601.9531
+        y: 111.8125
+        width: 166
+        height: 80
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: OnLeftKeyPressed
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Walk
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: OnRightKeyPressed
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Walk
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: OnUpKeyPressed
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Walk
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: OnDownKeyPressed
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Walk
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GetKeyDown
+        - HutongGames.PlayMaker.Actions.GetKeyDown
+        - HutongGames.PlayMaker.Actions.GetKeyDown
+        - HutongGames.PlayMaker.Actions.GetKeyDown
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000030000000600000009000000
+        actionHashCodes: ff77a904ff77a904ff77a904ff77a904
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: LeftKeyPressed
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: RightKeyPressed
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: UpKeyPressed
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: DownKeyPressed
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - OnLeftKeyPressed
+        - OnRightKeyPressed
+        - OnUpKeyPressed
+        - OnDownKeyPressed
+        byteData: 61000000640000007700000073000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 070000001700000011000000070000001700000011000000070000001700000011000000070000001700000011000000
+        paramName:
+        - key
+        - sendEvent
+        - storeResult
+        - key
+        - sendEvent
+        - storeResult
+        - key
+        - sendEvent
+        - storeResult
+        - key
+        - sendEvent
+        - storeResult
+        paramDataPos: 0000000000000000000000000400000001000000010000000800000002000000020000000c0000000300000003000000
+        paramByteDataSize: 040000000000000000000000040000000000000000000000040000000000000000000000040000000000000000000000
+    - name: Walk
+      description: 
+      colorIndex: 3
+      position:
+        serializedVersion: 2
+        x: 406.79688
+        y: 292.85156
+        width: 104
+        height: 80
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: MoveUp
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: WalkUp
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: MoveDown
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: WalkDown
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: MoveLeft
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: WalkLeft
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: MoveRight
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: WalkRigth
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - PlayMaker.ConditionalExpression.ConditionalExpression
+        - PlayMaker.ConditionalExpression.ConditionalExpression
+        - PlayMaker.ConditionalExpression.ConditionalExpression
+        - PlayMaker.ConditionalExpression.ConditionalExpression
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000060000000c00000012000000
+        actionHashCodes: 490c8701490c8701490c8701490c8701
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: UpKeyPressed||(!UpKeyReleased && DownKeyReleased)
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: DownKeyPressed||(!DownKeyReleased && UpKeyReleased)
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: RightKeyPressed||(!RightKeyReleased && LeftKeyReleased)
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: LeftKeyPressed||(!LeftKeyReleased && RightKeyReleased)
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - MoveUp
+        - 
+        - MoveUp
+        - 
+        - MoveRight
+        - 
+        - MoveLeft
+        - 
+        byteData: 0000000000000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 120000001700000017000000010000000100000011000000120000001700000017000000010000000100000011000000120000001700000017000000010000000100000011000000120000001700000017000000010000000100000011000000
+        paramName:
+        - expression
+        - isTrueEvent
+        - isFalseEvent
+        - everyFrame
+        - rawResult
+        - storeResult
+        - expression
+        - isTrueEvent
+        - isFalseEvent
+        - everyFrame
+        - rawResult
+        - storeResult
+        - expression
+        - isTrueEvent
+        - isFalseEvent
+        - everyFrame
+        - rawResult
+        - storeResult
+        - expression
+        - isTrueEvent
+        - isFalseEvent
+        - everyFrame
+        - rawResult
+        - storeResult
+        paramDataPos: 000000000000000001000000000000000100000000000000010000000200000003000000020000000300000001000000020000000400000005000000040000000500000002000000030000000600000007000000060000000700000003000000
+        paramByteDataSize: 000000000000000000000000010000000100000000000000000000000000000000000000010000000100000000000000000000000000000000000000010000000100000000000000000000000000000000000000010000000100000000000000
+    - name: WalkStop
+      description: 
+      colorIndex: 7
+      position:
+        serializedVersion: 2
+        x: 841.3906
+        y: 313.625
+        width: 186
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: OnAllMoveKeyReleased
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Idle
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    - name: WalkLeft
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 56
+        y: 363
+        width: 162
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: OnMoveKeyPressed
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Walk
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.AnyKey
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 701a8903
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams:
+        - target: 0
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 0
+            gameObject:
+              useVariable: 0
+              name: 
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - OnMoveKeyPressed
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1f00000017000000
+        paramName:
+        - eventTarget
+        - sendEvent
+        paramDataPos: 0000000000000000
+        paramByteDataSize: 0000000000000000
+    - name: WalkRigth
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 62
+        y: 439
+        width: 162
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: OnMoveKeyPressed
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Walk
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.AnyKey
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 701a8903
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams:
+        - target: 0
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 0
+            gameObject:
+              useVariable: 0
+              name: 
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - OnMoveKeyPressed
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1f00000017000000
+        paramName:
+        - eventTarget
+        - sendEvent
+        paramDataPos: 0000000000000000
+        paramByteDataSize: 0000000000000000
+    - name: WalkUp
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 55
+        y: 239.96094
+        width: 162
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: OnMoveKeyPressed
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Walk
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.AnyKey
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 701a8903
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams:
+        - target: 0
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 0
+            gameObject:
+              useVariable: 0
+              name: 
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - OnMoveKeyPressed
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1f00000017000000
+        paramName:
+        - eventTarget
+        - sendEvent
+        paramDataPos: 0000000000000000
+        paramByteDataSize: 0000000000000000
+    - name: WalkDown
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 52
+        y: 300.9922
+        width: 162
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: OnMoveKeyPressed
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Walk
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.AnyKey
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 701a8903
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams:
+        - target: 0
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 0
+            gameObject:
+              useVariable: 0
+              name: 
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - OnMoveKeyPressed
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1f00000017000000
+        paramName:
+        - eventTarget
+        - sendEvent
+        paramDataPos: 0000000000000000
+        paramByteDataSize: 0000000000000000
+    events:
+    - name: OnLeftKeyPressed
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: OnRightKeyPressed
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: OnUpKeyPressed
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: OnDownKeyPressed
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: OnLeftKeyReleased
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: OnRightKeyReleased
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: OnUpKeyReleased
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: OnDownKeyReleased
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: OnAllMoveKeyReleased
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: MoveUp
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: MoveDown
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: MoveLeft
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: MoveRight
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: OnMoveKeyPressed
+      isSystemEvent: 0
+      isGlobal: 0
+    globalTransitions: []
+    variables:
+      floatVariables: []
+      intVariables: []
+      boolVariables:
+      - useVariable: 1
+        name: LeftKeyPressed
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: RightKeyPressed
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: UpKeyPressed
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: DownKeyPressed
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: DownKeyReleased
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 1
+      - useVariable: 1
+        name: UpKeyReleased
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 1
+      - useVariable: 1
+        name: LeftKeyReleased
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 1
+      - useVariable: 1
+        name: RightKeyReleased
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 1
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+      arrayVariables: []
+      enumVariables: []
+      categories:
+      - 
+      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000
+    description: 
+    docUrl: 
+    showStateLabel: 0
+    maxLoopCount: 0
+    watermark: playMakerLogo.png
+    password: 
+    locked: 0
+    manualUpdate: 0
+    outVariableIndices: 
+    keepDelayedEventsOnStateExit: 0
+    preprocessed: 0
+    ExposedEvents: []
+    OutputEvents: []
+    RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
+    EnableDebugFlow: 0
+    EnableBreakpoints: 1
+    editorFlags: 481
+    activeStateName: 
+    mouseEvents: 0
+    handleLevelLoaded: 0
+    handleTriggerEnter2D: 0
+    handleTriggerExit2D: 0
+    handleTriggerStay2D: 0
+    handleCollisionEnter2D: 0
+    handleCollisionExit2D: 0
+    handleCollisionStay2D: 0
+    handleTriggerEnter: 0
+    handleTriggerExit: 0
+    handleTriggerStay: 0
+    handleCollisionEnter: 0
+    handleCollisionExit: 0
+    handleCollisionStay: 0
+    handleParticleCollision: 0
+    handleControllerColliderHit: 0
+    handleJointBreak: 0
+    handleJointBreak2D: 0
+    handleOnGUI: 0
+    handleFixedUpdate: 0
+    handleLateUpdate: 0
+    handleApplicationEvents: 0
+    handleUiEvents: 0
+    handleLegacyNetworking: 0
+    handleAnimatorMove: 0
+    handleAnimatorIK: 0
+  fsmTemplate: {fileID: 0}
+  eventHandlerComponentsAdded: 0
 --- !u!1 &4957580077080438971
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,8 +1300,6 @@ MonoBehaviour:
     isNpc: 0
     isMobs: 0
     canDuplicated: 0
-  character2DController: {fileID: 3528222369192864518}
-  currentActiveState: 
 --- !u!114 &6595422609999225242
 MonoBehaviour:
   m_ObjectHideFlags: 0

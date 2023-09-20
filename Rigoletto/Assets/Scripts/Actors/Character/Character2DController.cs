@@ -12,12 +12,15 @@ namespace Actors.Character
         public BaseCharacter BaseCharacter;
         public float speed;
 
+        public PlayMakerFSM fsm;
+
         public static readonly int isMove = Animator.StringToHash("isMove");
 
         // Start is called before the first frame update
         void Start()
         {
             BaseCharacter = GetComponentInChildren<BaseCharacter>();
+            //fsm.GetComponent<PlayMakerFSM>();
         }
 
         // Update is called once per frame
