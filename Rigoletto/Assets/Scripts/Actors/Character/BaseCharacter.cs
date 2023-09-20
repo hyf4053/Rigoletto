@@ -1,5 +1,7 @@
+using System;
 using GameFramework;
 using ScriptableObjectClass;
+using Unity.Collections;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -15,6 +17,16 @@ namespace Actors.Character
 
         //角色实际在游戏中会进行存取的数据内容，也是存档系统需要保存的内容
         public CharacterDataStructure dataToSave;
+
+        private void Start()
+        {
+
+        }
+
+        private void Update()
+        {
+        
+        }
         
 
         /// <summary>

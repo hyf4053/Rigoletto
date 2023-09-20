@@ -355,6 +355,8 @@ MonoBehaviour:
     isNpc: 0
     isMobs: 0
     canDuplicated: 0
+  character2DController: {fileID: 3528222369192864518}
+  currentActiveState: 
 --- !u!114 &6595422609999225242
 MonoBehaviour:
   m_ObjectHideFlags: 0

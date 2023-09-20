@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Actors.Character
@@ -10,19 +11,7 @@ namespace Actors.Character
             
             base.DataInit();
         }
-
-        // Start is called before the first frame update
-        void Start()
-        {
-            //DataInit();
-            //Debug.Log(data
-            //Predefined.characterID);
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
         
-        }
+        
     }
 }

@@ -12,7 +12,7 @@ namespace Actors.Character
         public BaseCharacter BaseCharacter;
         public float speed;
 
-        private static readonly int isMove = Animator.StringToHash("isMove");
+        public static readonly int isMove = Animator.StringToHash("isMove");
 
         // Start is called before the first frame update
         void Start()
@@ -51,6 +51,11 @@ namespace Actors.Character
         {
             characterAnimator.SetBool(isMove,true);
             transform.position += new Vector3(0, 0, -speed);
+        }
+
+        public void PlayMove()
+        {
+            characterAnimator.SetBool(isMove,true);
         }
     }
 }
