@@ -50,6 +50,8 @@ namespace GameFramework.StateMachine
             leftwardReleased = true;
             rightwardReleased = true;
         }
+        
+        
 
         private void Update()
         {
