@@ -9,9 +9,12 @@
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3GlobalReferences.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3GlobalReferences.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Characters/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Characters/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/DemoMainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DemoMainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DemoMainScene01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DemoMainScene01.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlayGround.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlayGround.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Character/Character2DController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Character/Character2DController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameFramework/StateMachine/CharacterStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameFramework/StateMachine/CharacterStateMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateActionsExtension/InputDirection.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateActionsExtension/InputDirection.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,34 +41,34 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateActionsExtension/InputDirection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateActionsExtension/InputDirectionEvent.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2Vdod5MNjJEQ10CbrOBh4sxDmi0" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/lanmaomi/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache",
-      "/Users/lanmaomi/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache",
-      "/Users/lanmaomi/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/lanmaomi/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/lanmaomi/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache&quot;,
+      &quot;/Users/lanmaomi/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Standalone Player.Start Unity">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.3.9f1/Unity.app/Contents/MacOS/Unity" />
@@ -113,6 +116,7 @@
       <option name="presentableId" value="Default" />
       <updated>1695175403509</updated>
       <workItem from="1695175405782" duration="32729000" />
+      <workItem from="1695364650594" duration="1050000" />
     </task>
     <servers />
   </component>

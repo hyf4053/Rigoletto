@@ -18,7 +18,7 @@ namespace Actors.Character
 
         public static readonly int isMove = Animator.StringToHash("isMove");
 
-        #region FSM Variables
+        /*#region FSM Variables
         
         public bool leftwardPressed;
         public bool rightwardPressed;
@@ -31,9 +31,9 @@ namespace Actors.Character
         public bool downwardReleased;
         
 
-        #endregion
+        #endregion*/
         
-        //最终的移动判断
+        /*//最终的移动判断
         public void MoveUpdate()
         {
             if (leftwardPressed ||( !leftwardReleased && rightwardReleased))
@@ -52,9 +52,9 @@ namespace Actors.Character
             {
                 MoveDown();
             }
-        }
+        }*/
 
-        public void InputUpdate()
+        /*public void InputUpdate()
         {
              if (Input.GetKeyDown(KeyCode.A))
              {
@@ -256,16 +256,16 @@ namespace Actors.Character
                      }
                  }
              }
-        }
+        }*/
         
-        public void OnLeftKeyPressed()
+        /*public void OnLeftKeyPressed()
         {
             if (fsm.ActiveStateName != "Move")
             {
                 fsm.SendEvent("OnLeftKeyPressed");
                 
             }
-        }
+        }*/
         
         
 
@@ -273,7 +273,7 @@ namespace Actors.Character
         void Start()
         {
             baseCharacter = GetComponentInChildren<BaseCharacter>();
-            leftwardReleased = true;
+            /*leftwardReleased = true;
             rightwardReleased = true;
             upwardReleased = true;
             downwardReleased = true;
@@ -286,9 +286,9 @@ namespace Actors.Character
             leftwardReleased =fsm.FsmVariables.GetFsmBool("LeftKeyReleased").Value;
             rightwardReleased =fsm.FsmVariables.GetFsmBool("RightKeyReleased").Value;
             upwardReleased =fsm.FsmVariables.GetFsmBool("UpKeyReleased").Value;
-            downwardReleased = fsm.FsmVariables.GetFsmBool("DownKeyReleased").Value;*/
+            downwardReleased = fsm.FsmVariables.GetFsmBool("DownKeyReleased").Value;#1#
 
-            // fsm.
+            // fsm.*/
         }
 
 
@@ -303,7 +303,7 @@ namespace Actors.Character
             characterAnimator.SetBool(isMove,false);
         }
 
-        public void MoveLeft()
+        /*public void MoveLeft()
         {
             characterAnimator.SetBool(isMove,true);
             SpRenderer.flipX = true;
@@ -327,7 +327,7 @@ namespace Actors.Character
         {
             characterAnimator.SetBool(isMove,true);
             transform.position += new Vector3(0, 0, -speed);
-        }
+        }*/
 
         public void Move(Vector2 normalizedVector)
         {
