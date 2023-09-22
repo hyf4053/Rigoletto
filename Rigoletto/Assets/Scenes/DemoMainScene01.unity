@@ -307,6 +307,7 @@ MonoBehaviour:
   loadGameButton: {fileID: 1656518595}
   loadingScreen: {fileID: 667817446}
   loadingBarFill: {fileID: 0}
+  mainUI: {fileID: 0}
   loadSlotSelectionUI: {fileID: 0}
   saveSlotUI: {fileID: 0}
   uiLayerList: []
@@ -869,18 +870,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterAnimator: {fileID: 421501751}
-  SpRenderer: {fileID: 421501753}
+  spRenderer: {fileID: 421501753}
   baseCharacter: {fileID: 0}
   speed: 0
   fsm: {fileID: 0}
-  leftwardPressed: 0
-  rightwardPressed: 0
-  upwardPressed: 0
-  downwardPressed: 0
-  leftwardReleased: 0
-  rightwardReleased: 0
-  upwardReleased: 0
-  downwardReleased: 0
 --- !u!95 &421501751
 Animator:
   serializedVersion: 5
@@ -2376,18 +2369,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterAnimator: {fileID: 1019544002}
-  SpRenderer: {fileID: 1019544004}
+  spRenderer: {fileID: 1019544004}
   baseCharacter: {fileID: 0}
   speed: 0
   fsm: {fileID: 0}
-  leftwardPressed: 0
-  rightwardPressed: 0
-  upwardPressed: 0
-  downwardPressed: 0
-  leftwardReleased: 0
-  rightwardReleased: 0
-  upwardReleased: 0
-  downwardReleased: 0
 --- !u!95 &1019544002
 Animator:
   serializedVersion: 5
@@ -3394,18 +3379,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterAnimator: {fileID: 1141650457}
-  SpRenderer: {fileID: 1141650459}
+  spRenderer: {fileID: 1141650459}
   baseCharacter: {fileID: 0}
   speed: 0
   fsm: {fileID: 0}
-  leftwardPressed: 0
-  rightwardPressed: 0
-  upwardPressed: 0
-  downwardPressed: 0
-  leftwardReleased: 0
-  rightwardReleased: 0
-  upwardReleased: 0
-  downwardReleased: 0
 --- !u!95 &1141650457
 Animator:
   serializedVersion: 5
@@ -5683,7 +5660,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1786599327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6566,18 +6543,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterAnimator: {fileID: 7268800141292878702}
-  SpRenderer: {fileID: 6970307401403973371}
+  spRenderer: {fileID: 6970307401403973371}
   baseCharacter: {fileID: 0}
   speed: 0
   fsm: {fileID: 0}
-  leftwardPressed: 0
-  rightwardPressed: 0
-  upwardPressed: 0
-  downwardPressed: 0
-  leftwardReleased: 0
-  rightwardReleased: 0
-  upwardReleased: 0
-  downwardReleased: 0
 --- !u!4 &4468630684724814849
 Transform:
   m_ObjectHideFlags: 0

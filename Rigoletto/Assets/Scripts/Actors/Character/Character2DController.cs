@@ -10,13 +10,13 @@ namespace Actors.Character
     public class Character2DController : MonoBehaviour
     {
         public Animator characterAnimator;
-        public SpriteRenderer SpRenderer;
+        [FormerlySerializedAs("SpRenderer")] public SpriteRenderer spRenderer;
         public BaseCharacter baseCharacter;
         public float speed;
 
         public PlayMakerFSM fsm;
 
-        public static readonly int isMove = Animator.StringToHash("isMove");
+        private static readonly int IsMove = Animator.StringToHash("isMove");
 
         /*#region FSM Variables
         
@@ -300,7 +300,7 @@ namespace Actors.Character
 
         public void ResetAnimation()
         {
-            characterAnimator.SetBool(isMove,false);
+            characterAnimator.SetBool(IsMove,false);
         }
 
         /*public void MoveLeft()
@@ -333,10 +333,10 @@ namespace Actors.Character
         {
             if (normalizedVector.x < 0)
             {
-                SpRenderer.flipX = true;
+                spRenderer.flipX = true;
             }else if (normalizedVector.x > 0)
             {
-                SpRenderer.flipX = false;
+                spRenderer.flipX = false;
             }
 
             transform.position += new Vector3(normalizedVector.x,0,normalizedVector.y) * speed;
@@ -350,10 +350,10 @@ namespace Actors.Character
                 t += Time.deltaTime;
                 if (normalizedVector.x < 0)
                 {
-                    SpRenderer.flipX = true;
+                    spRenderer.flipX = true;
                 }else if (normalizedVector.x > 0)
                 {
-                    SpRenderer.flipX = false;
+                    spRenderer.flipX = false;
                 }
 
                 transform.position += new Vector3(normalizedVector.x,1f+Time.deltaTime,normalizedVector.y) * speed;
@@ -363,7 +363,7 @@ namespace Actors.Character
 
         public void PlayMove()
         {
-            characterAnimator.SetBool(isMove,true);
+            characterAnimator.SetBool(IsMove,true);
         }
         
         

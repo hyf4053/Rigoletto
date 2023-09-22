@@ -372,140 +372,6 @@ CanvasRenderer:
   m_CorrespondingSourceObject: {fileID: 1764605375616274376, guid: 357e50dd2c1384e129179e3a6ea6c4e4, type: 3}
   m_PrefabInstance: {fileID: 6209556759802181278}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &262055960
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 262055961}
-  - component: {fileID: 262055963}
-  - component: {fileID: 262055962}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &262055961
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 262055960}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 886608199}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &262055962
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 262055960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Button
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &262055963
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 262055960}
-  m_CullTransparentMesh: 1
 --- !u!1 &293928603
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,6 +562,633 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 336399039}
   m_CullTransparentMesh: 1
+--- !u!1 &346469225
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 346469226}
+  - component: {fileID: 346469230}
+  - component: {fileID: 346469229}
+  - component: {fileID: 346469228}
+  - component: {fileID: 346469227}
+  - component: {fileID: 346469231}
+  - component: {fileID: 346469233}
+  - component: {fileID: 346469232}
+  m_Layer: 0
+  m_Name: Debug
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &346469226
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346469225}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1822987300}
+  m_Father: {fileID: 957704827}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!225 &346469227
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346469225}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &346469228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346469225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &346469229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346469225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &346469230
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346469225}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &346469231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346469225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    dataVersion: 2
+    usedInTemplate: {fileID: 0}
+    name: FSM
+    startState: InitState
+    states:
+    - name: InitState
+      description: 
+      colorIndex: 6
+      position:
+        serializedVersion: 2
+        x: 225.02344
+        y: 112
+        width: 123
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: OnInitHide
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Hide
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: OnInitDisplay
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Display
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.BoolTest
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: a4c8bf00
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: DisplayOnDefault
+          tooltip: "\u8BE5UI\u662F\u5426\u9ED8\u8BA4\u5F00\u7403"
+          showInInspector: 1
+          networkSync: 0
+          value: 1
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - OnInitDisplay
+        - OnInitHide
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 11000000170000001700000001000000
+        paramName:
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 00000000000000000100000000000000
+        paramByteDataSize: 00000000000000000000000001000000
+    - name: Display
+      description: 
+      colorIndex: 3
+      position:
+        serializedVersion: 2
+        x: 64
+        y: 201.0625
+        width: 122
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: OnExitTrigger
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Animation
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    - name: Hide
+      description: 
+      colorIndex: 4
+      position:
+        serializedVersion: 2
+        x: 386.02344
+        y: 204.0625
+        width: 133
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: OnEnterTrigger
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Animation
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    - name: Animation
+      description: 
+      colorIndex: 7
+      position:
+        serializedVersion: 2
+        x: 181.00781
+        y: 304.10156
+        width: 224
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: OnHideAnimationFinished
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Hide
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: OnDisplayAnimationFinished
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Display
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    events:
+    - name: OnInitHide
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: OnInitDisplay
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: OnExitTrigger
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: OnEnterTrigger
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: OnHideAnimationFinished
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: OnDisplayAnimationFinished
+      isSystemEvent: 0
+      isGlobal: 0
+    globalTransitions: []
+    variables:
+      floatVariables: []
+      intVariables: []
+      boolVariables:
+      - useVariable: 1
+        name: DisplayOnDefault
+        tooltip: "\u8BE5UI\u662F\u5426\u9ED8\u8BA4\u5F00\u7403"
+        showInInspector: 1
+        networkSync: 0
+        value: 0
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+      arrayVariables: []
+      enumVariables: []
+      categories:
+      - 
+      variableCategoryIDs: 00000000
+    description: 
+    docUrl: 
+    showStateLabel: 0
+    maxLoopCount: 0
+    watermark: 
+    password: 
+    locked: 0
+    manualUpdate: 0
+    outVariableIndices: 
+    keepDelayedEventsOnStateExit: 0
+    preprocessed: 0
+    ExposedEvents: []
+    OutputEvents: []
+    RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
+    EnableDebugFlow: 0
+    EnableBreakpoints: 1
+    editorFlags: 225
+    activeStateName: 
+    mouseEvents: 0
+    handleLevelLoaded: 0
+    handleTriggerEnter2D: 0
+    handleTriggerExit2D: 0
+    handleTriggerStay2D: 0
+    handleCollisionEnter2D: 0
+    handleCollisionExit2D: 0
+    handleCollisionStay2D: 0
+    handleTriggerEnter: 0
+    handleTriggerExit: 0
+    handleTriggerStay: 0
+    handleCollisionEnter: 0
+    handleCollisionExit: 0
+    handleCollisionStay: 0
+    handleParticleCollision: 0
+    handleControllerColliderHit: 0
+    handleJointBreak: 0
+    handleJointBreak2D: 0
+    handleOnGUI: 0
+    handleFixedUpdate: 0
+    handleLateUpdate: 0
+    handleApplicationEvents: 0
+    handleUiEvents: 0
+    handleLegacyNetworking: 0
+    handleAnimatorMove: 0
+    handleAnimatorIK: 0
+  fsmTemplate: {fileID: 0}
+  eventHandlerComponentsAdded: 0
+--- !u!114 &346469232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346469225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0390bd8b8ffd640b34fe25065ff1df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateType: 0
+  isSpeedBased: 0
+  hasOnStart: 0
+  hasOnPlay: 0
+  hasOnUpdate: 0
+  hasOnStepComplete: 0
+  hasOnComplete: 0
+  hasOnTweenCreated: 0
+  hasOnRewind: 0
+  onStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onPlay:
+    m_PersistentCalls:
+      m_Calls: []
+  onUpdate:
+    m_PersistentCalls:
+      m_Calls: []
+  onStepComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  onComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  onTweenCreated:
+    m_PersistentCalls:
+      m_Calls: []
+  onRewind:
+    m_PersistentCalls:
+      m_Calls: []
+  targetIsSelf: 1
+  targetGO: {fileID: 0}
+  tweenTargetIsTargetGO: 1
+  delay: 0
+  duration: 1
+  easeType: 6
+  easeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  loopType: 0
+  loops: 1
+  id: 
+  isRelative: 0
+  isFrom: 0
+  isIndependentUpdate: 0
+  autoKill: 0
+  autoGenerate: 1
+  isActive: 1
+  isValid: 1
+  target: {fileID: 346469227}
+  animationType: 7
+  targetType: 2
+  forcedTargetType: 0
+  autoPlay: 1
+  useTargetAsV3: 0
+  endValueFloat: 1
+  endValueV3: {x: 0, y: 0, z: 0}
+  endValueV2: {x: 0, y: 0}
+  endValueColor: {r: 1, g: 1, b: 1, a: 1}
+  endValueString: 
+  endValueRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  endValueTransform: {fileID: 0}
+  optionalBool0: 0
+  optionalBool1: 0
+  optionalFloat0: 0
+  optionalInt0: 0
+  optionalRotationMode: 0
+  optionalScrambleMode: 0
+  optionalShakeRandomnessMode: 0
+  optionalString: 
+--- !u!114 &346469233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346469225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 40306178, guid: aa0b1eebb5db27a419fa4564bbe5c9c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  preset: 1
+  onEnableBehaviour: 3
+  onDisableBehaviour: 2
 --- !u!1 &407709135
 GameObject:
   m_ObjectHideFlags: 0
@@ -2045,127 +2538,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 873385299}
   m_CullTransparentMesh: 1
---- !u!1 &886608195
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 886608199}
-  - component: {fileID: 886608198}
-  - component: {fileID: 886608197}
-  - component: {fileID: 886608196}
-  m_Layer: 5
-  m_Name: Button
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &886608196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 886608195}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 886608197}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &886608197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 886608195}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &886608198
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 886608195}
-  m_CullTransparentMesh: 1
---- !u!224 &886608199
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 886608195}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 262055961}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &888328195
 GameObject:
   m_ObjectHideFlags: 0
@@ -2276,6 +2648,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4453775298060511177}
+  - {fileID: 346469226}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &957704828
@@ -2514,6 +2887,7 @@ MonoBehaviour:
   loadGameButton: {fileID: 1824548821}
   loadingScreen: {fileID: 1370062467}
   loadingBarFill: {fileID: 546853009}
+  mainUI: {fileID: 957704826}
   loadSlotSelectionUI: {fileID: 7735824026684530535}
   saveSlotUI: {fileID: 677505456}
   uiLayerList: []
@@ -3045,7 +3419,7 @@ MonoBehaviour:
   - {fileID: 8736071757687622788, guid: bc08e6e5b21009d419e9e75b738815ee, type: 3}
   - {fileID: -5060648369894741509, guid: 6f17b6b6cb59642f794281c587415cdf, type: 3}
   idRef:
-    _Keys: a24ca6f3b4c01a08e440d06a224d84746d40303cb7f81e08370ee14e0a4ecd2a4489d59ea8a39b38d77c69469dc08f710cd32d920a2c3e3fba5430b9eab844190fc39fc9f898492f256b5460f805c959c350a440daff343e86f9245816ac0e1dc8b0a99e9fa6955be2a391602822b94b75280965ebfcc10e0921b00e435eba775d3629a9ae68f8691affdc816f6b9857b36fcd3eb5740933ef9aa6c157a39f41a3f643a0b49d0622df8db414dfc0607345f7a42c6e843d18a193cf59f7b6f74f0e5238e113b05130c207bfaf4baaed0fe23e57b172bf1b40e4fea1d5f9288d378abf7c645909ce5d44ad02c5f5236e7c5cc6eb3575170741d20a67b6f0453e76a065db9a51c6f4156aaa6028c0f5544f05e5839f008c2c27355b73be05bc132433d58b851a3ade0c15456ae61a992738a248452936218812c74b9909accaef52983c5c9580d96a3e3c6f7444ddb9f365ccc4e2438816125582eb2606831d480dd6aa2692e282bb6f6341c8515b3a632f1c3fd4c40c117c56eb20ff5e10e5d15a03c42d0eff435701a48d4e6fe870fe5adb9b93402775da567a2107b86b64571df62b92f23a5bd3490aa5d129384fb55043301b1021e61048e8b67ada1ce6e23ca6a85c2fa871f41eb1423deec97fa96618ba265bbe53be233dda0a84e0f92d0f78f1311f541b074a9f1e0d29f3c10407677ff3cd67703e54704c65bbb0c9bb343e8fc97c0b1f855e5aa324ff06570239f738b8d4283ae36a884c92a2433c17299d26987d747eed46fb9473c44b3f4e37b1604e177d70a303ad5ef4bf8de31b1d8c3d10d65a594721e87ba2468fabd3579518c73515b1dd6a3fcbb01591bc536fa42b3596d1ff8d5553e72b72a9a5e1426da2dd47ee864d3de585e9d9f6a34c5bcf11a263753c866aca5c6107bf09072f5e9faacb8447160de7d6f7c9368e4a73d429f8a2a1f9643e6f1e63020497f36edf8ab0f7c2bc727c651de13b73312e4376f9d9bc4af26670d2b7c1625fe3e914067a4ce0586dcb689eb830ed51157175b007d452eda29e35d33d23a56301941c85896f332bf7be08e2bc3f0cc6d7b410fdbbe90dcec10c5de1c3783e304d33293199f2e6d4f71b550fcbbde3cd7d9265fbe535700db1395dc99d2b035e75e04f8607bdb7238ba10b2ac0e4658010d463ceecc6ea7c5cc91e2cb0e2c933e80967ec6d5ec5bfda417986409ace959fdd4737382db4c335331ed2dce4d36d6a3e12cb4b7a13b20ea356d2c09cc43d0576722e656e0545ab5c20a27cf4e3f66e0b0e7fac99e119f1f946dc848684d2f75c346671a507fc38cd1ff059713519c06063b58d43ea9e588c1ea04b1e36ce1f0c67da297d84c804124787472e8c9dd0a0623d58f986940db463f6223a41c50230601659ffc97c90ad55afa6a049ed9e785125ff92e4e2638c027e6b06baed052109890fc4b12b8f524f8de0ab78b079c83bf7a042e1f9628c3023e2cf2a60d9072c07f1ec128aa5cf2ced93169b2754f33f4d3a1c772d162e16fd08a040947a1929a9d872be6caf5f104e339a3d8d83ee00b928bd0aa0e7a84310bb4319e00e0d1bfe038ad0304350696a05b5e8c4e9fe5d6b8083db8ce1d83ff404a238b6a75c3a4c9afe1d122ec30925d08b7c8987ab53354b832f9107f57ad51256fedbc0747cc2f5783c08f62d1d3de22d3aeed8f613238a46749cc09c01ab04420a10d11842bb03a95a19362a7bc262d5ae173c9d031aa72d5c3a93771ecb24ff02456c710595981754317baf5b50419846cf187677484f8471749e7a55046d80fa515f8f07b703aaabf8641242870345c8923edc1982a776753eb86d4ac553e18b8751185ae41f7842d4ef2d1cc2be148fa64d3d3a6f99865517e637019660e6a48286bb34eceaadb1b71fee70d69337fdccfdf112921cfb20d76e7101e877d834d5d19e4986b6856e04100d7087f62aaa1e34ce676fd312658b9b5c7d875365d107ddb959ce7e88ea887df17f0f8aa7ce981c1f4b7d6b7e3b4a309a359531effbf18fc94c19b41687d0801746dc743f30b742b03de9d5dea2a73bfa5cfafa0b049d4930548055f12b5a4f8d60f68ac8c8991215048f54880e72ad664ab5c3842f25b1ff2be2e55b0c0c1b1d2126fc5f06664f6911f0387f975a00dd36227b4c1d850d5c365348725cfdc7d9587c52744c5f9dc072aed82cd1eafcf0148554985eb54a855727bb8fbffcf6197d18d53e0a8e8846666099d8bdf36c372764ab561a3a4f6c4ab7f700da640c7f41b2446f39df61a1274e451f95cfd7712d374ba742c0c64450d0519dbcb16d1a6b191a0caffdfe4823b470acfb691b261f86d210b0b3c202151aedcf724c2f49042a4dcea53c44351e9347e83a7a5bb82feb91e511bfe462732d64b4c0eee8d6087c8cde5cda2a13638f861042dd35d975a6fe87ba4938454514a48727708ad07ce30f411182a4ab152f1c2960259bb85ce437a1d1da127e5231d80c623b013035efaa8745ec16081005f4c002f0372e1931c59136ab59373458cb72209a8d8a2ca91a8c63430af729d860ba4d6b381228022f9f6dca1a294750442e2140954f5b06a19409febdc73c4344a1b461163632e198ffc098c04f3dbb2bec002329176eaf1647c9a3082a45989c4ff144215738f204fc266aef0c46aea9b22d2f39e76c5d0f64775d00d6279246a7caf0bf7d227ddaf1e1d30ffc40f7ff88b245a88b5eb6e39434bce0da0dda23b8b097d736112c8fb0544706984deddb7ea188dc1e1645b7eaf2d5b79963001b440837522832ca65794a07c8e8504b4722985e7c9501b34cd62263d30e7cce9a3d1cd932c27c4fbafc6a19b8b979295c731b1d4b9a573d43b354ad479a326d10eeadf9e0bc5b2a2feb6f5be5b36bfaaf07f89f0ca07cffe5df967e6dcf6aff6267a8a15fca6c39a63f3b5ca07b5d3012126efd8edd2ae98706361f721b17a02b3bcdf8a1c1168e16079ee1fc733c213116f58fd1d476689604a29c82b8689d30d9791732f665bd8912f912839d24133b8c60a5409d1f9582c8475a106212e8081855d104e61368a09aa350db59422f9304c76cd8861b423660c96dadb535a76cd6561ece135bcfbad055e2f6c90e7c6b23b2c152811082fd970765b08016aa30b6434d509f0259a0074df8cfc738111826e499e43f1ec74501ec53f3a3330b260b6259cf09523b30f82b08a6184139bd546676839c3de12687b2cddae40c35ec1c088ca6ad42f22be1352394d81f2ebfb3959e3dbc713eb7bd7fa943e05fb4149f0a3ddf31206c97754ba266194b912efa1a7e3bca6d4678974d43cef41700d9cbcd328fd104a60558055db4bb4b369095066905390ad10f9bd8783920574aa30c371fdcef02a40a3f7c6c2f3505cc1ce84cc7125104a0c1fc23f4f88c20da50afff3e0c945aa193aa7445b6760044a0a494226d1f5df510975edfcb0d63689fa94321cbbc27b143ee5bbdc549164afbdf5354f7fe6dd0aef6d28aca852985460ba60d33df782596afc5cd53dd6994f94714f7d6762846b81da4893fdc3d80935e9183772349efae9777b4f2f309f5f4f61b4352b83d16366aea7b0d8f1bbb724660b26eec0a1d9104a66eeedc38022719eb9a0e1d539acae483a3407353b99f1b44e8f5196f1911b1e37fbd596cf5df1308af064c40a55701b60a4bf64265925bc5d59dc319dcaf887cac84fd40ec5ce940f7cf7933e590b7ede7e0bd6ea42c8f67c76ec92bd05ada5ac37995163e8d3cf8cf8a7143920926800b6a875ab1b331adf022f918b7c06929107ddd0f9852d3d21b0795160f7ee659de550d0a8c512a155b275675bf41d48bf8a41d6e69d86df5bd79bb60b35f9ebe53c7b37003a16da323dff04d2fad527d469f473904cac2a8bd233e4e19fad0e37a23fb47caba586835a9767069e011ffe5ce48641bb7a9b26f97db6715b0df915fc5d7590709ac210c5d0103ad6eaf0697d15c75db1b38d467d10134f0f408293051651e954f103ad22d93414a59a021b91d01190d54b6438d02f235212ce14172f5041f603645c78c5d6624222d4c1243fd305540ed5332869fb55afc6a5bc5b779416fcfc6a6c3867f226f2b0ddfda299a470bd46592e426163e49f5790681fd15a135ea3ab485d396536b7bfaffb378e0fb1aed26e94df9c9fe5b43d712a62bd7b240945846e5a5ec3757ccb151938539ca65246e3d55e13df74808160273d355f503807bca839df9ea069cb195683b4cb40b313f57f4dc0a3c1bbbbe8ac901bf4e2a8436f092d3608355491ab2660f42f458ccf0dc052882f2108e817913fbcfee29814b9d13e690332f640b501bf2de953139393220b0a17a1a333bee6dfc1042157b09b1be6361163bb09346e20d703f017b320278cfc4e16e4ceff49ca9374c5c24d4c7501fa8514cdc7edffa26cdb14c56cf344a07271d48d8bcf6acaa4c1a7848ea07e1388f202d1430ae6ffe775f1edfe0120924b007197e0d8dd1dcb75a6152d6bc357e9e467cd69be386147d90408b811784a1e92b1ec7b29b3c8d8d596ca40e8d2127d9041d7665494cf74c8a5b585f5ead5da2563104bde217568b8a7e1154c26455e4877f36de28a3664dba4e6080101952605008e5e0ab32bee2070d279d0b88f3fd6f6e6853a637e414e70d922ec6e30f1a203a9e8eeec344860a76d308997326d62e3cddd10d66dc3c4a0538473c135614e20b822ed87e13cd4c11a1e29a24858b1844008b073e0dba5d25d8f4fa8cc21ecc42da7209aa5053af5540372fbc6f14f3689f7fec33f25c013c740159e02d3fb17ceba7b5ec7d910c53c6a2e0114e61b24680beec4331994f7d70cc1e52ad90832092742acf4760ba318b3f6d4f7cefee2b4b5f9f14d40a527c08cca2b550a0ff351fbf7fda37e2ff1ffc45470ed400fe7e220cf8b20f91b378df51398441fb1e154871b43233492f6dbcff02b6e46ad264db9e2ee59d66f30a403172f3378b670d
+    _Keys: a24ca6f3b4c01a08e440d06a224d84746d40303cb7f81e08370ee14e0a4ecd2a4489d59ea8a39b38d77c69469dc08f710cd32d920a2c3e3fba5430b9eab844190fc39fc9f898492f256b5460f805c959c350a440daff343e86f9245816ac0e1dc8b0a99e9fa6955be2a391602822b94b75280965ebfcc10e0921b00e435eba775d3629a9ae68f8691affdc816f6b9857b36fcd3eb5740933ef9aa6c157a39f41a3f643a0b49d0622df8db414dfc0607345f7a42c6e843d18a193cf59f7b6f74f0e5238e113b05130c207bfaf4baaed0fe23e57b172bf1b40e4fea1d5f9288d378abf7c645909ce5d44ad02c5f5236e7c5cc6eb3575170741d20a67b6f0453e76a065db9a51c6f4156aaa6028c0f5544f05e5839f008c2c27355b73be05bc132433d58b851a3ade0c15456ae61a992738a248452936218812c74b9909accaef52983c5c9580d96a3e3c6f7444ddb9f365ccc4e2438816125582eb2606831d480dd6aa2692e282bb6f6341c8515b3a632f1c3fd4c40c117c56eb20ff5e10e5d15a03c42d0eff435701a48d4e6fe870fe5adb9b93402775da567a2107b86b64571df62b92f23a5bd3490aa5d129384fb55043301b1021e61048e8b67ada1ce6e23ca6a85c2fa871f41eb1423deec97fa96618ba265bbe53be233dda0a84e0f92d0f78f1311f541b074a9f1e0d29f3c10407677ff3cd67703e54704c65bbb0c9bb343e8fc97c0b1f855e5aa324ff06570239f738b8d4283ae36a884c92a2433c17299d26987d747eed46fb9473c44b3f4e37b1604e177d70a303ad5ef4bf8de31b1d8c3d10d65a594721e87ba2468fabd3579518c73515b1dd6a3fcbb01591bc536fa42b3596d1ff8d5553e72b72a9a5e1426da2dd47ee864d3de585e9d9f6a34c5bcf11a263753c866aca5c6107bf09072f5e9faacb8447160de7d6f7c9368e4a73d429f8a2a1f9643e6f1e63020497f36edf8ab0f7c2bc727c651de13b73312e4376f9d9bc4af26670d2b7c1625fe3e914067a4ce0586dcb689eb830ed51157175b007d452eda29e35d33d23a56301941c85896f332bf7be08e2bc3f0cc6d7b410fdbbe90dcec10c5de1c3783e304d33293199f2e6d4f71b550fcbbde3cd7d9265fbe535700db1395dc99d2b035e75e04f8607bdb7238ba10b2ac0e4658010d463ceecc6ea7c5cc91e2cb0e2c933e80967ec6d5ec5bfda417986409ace959fdd4737382db4c335331ed2dce4d36d6a3e12cb4b7a13b20ea356d2c09cc43d0576722e656e0545ab5c20a27cf4e3f66e0b0e7fac99e119f1f946dc848684d2f75c346671a507fc38cd1ff059713519c06063b58d43ea9e588c1ea04b1e36ce1f0c67da297d84c804124787472e8c9dd0a0623d58f986940db463f6223a41c50230601659ffc97c90ad55afa6a049ed9e785125ff92e4e2638c027e6b06baed052109890fc4b12b8f524f8de0ab78b079c83bf7a042e1f9628c3023e2cf2a60d9072c07f1ec128aa5cf2ced93169b2754f33f4d3a1c772d162e16fd08a040947a1929a9d872be6caf5f104e339a3d8d83ee00b928bd0aa0e7a84310bb4319e00e0d1bfe038ad0304350696a05b5e8c4e9fe5d6b8083db8ce1d83ff404a238b6a75c3a4c9afe1d122ec30925d08b7c8987ab53354b832f9107f57ad51256fedbc0747cc2f5783c08f62d1d3de22d3aeed8f613238a46749cc09c01ab04420a10d11842bb03a95a19362a7bc262d5ae173c9d031aa72d5c3a93771ecb24ff02456c710595981754317baf5b50419846cf187677484f8471749e7a55046d80fa515f8f07b703aaabf8641242870345c8923edc1982a776753eb86d4ac553e18b8751185ae41f7842d4ef2d1cc2be148fa64d3d3a6f99865517e637019660e6a48286bb34eceaadb1b71fee70d69337fdccfdf112921cfb20d76e7101e877d834d5d19e4986b6856e04100d7087f62aaa1e34ce676fd312658b9b5c7d875365d107ddb959ce7e88ea887df17f0f8aa7ce981c1f4b7d6b7e3b4a309a359531effbf18fc94c19b41687d0801746dc743f30b742b03de9d5dea2a73bfa5cfafa0b049d4930548055f12b5a4f8d60f68ac8c8991215048f54880e72ad664ab5c3842f25b1ff2be2e55b0c0c1b1d2126fc5f06664f6911f0387f975a00dd36227b4c1d850d5c365348725cfdc7d9587c52744c5f9dc072aed82cd1eafcf0148554985eb54a855727bb8fbffcf6197d18d53e0a8e8846666099d8bdf36c372764ab561a3a4f6c4ab7f700da640c7f41b2446f39df61a1274e451f95cfd7712d374ba742c0c64450d0519dbcb16d1a6b191a0caffdfe4823b470acfb691b261f86d210b0b3c202151aedcf724c2f49042a4dcea53c44351e9347e83a7a5bb82feb91e511bfe462732d64b4c0eee8d6087c8cde5cda2a13638f861042dd35d975a6fe87ba4938454514a48727708ad07ce30f411182a4ab152f1c2960259bb85ce437a1d1da127e5231d80c623b013035efaa8745ec16081005f4c002f0372e1931c59136ab59373458cb72209a8d8a2ca91a8c63430af729d860ba4d6b381228022f9f6dca1a294750442e2140954f5b06a19409febdc73c4344a1b461163632e198ffc098c04f3dbb2bec002329176eaf1647c9a3082a45989c4ff144215738f204fc266aef0c46aea9b22d2f39e76c5d0f64775d00d6279246a7caf0bf7d227ddaf1e1d30ffc40f7ff88b245a88b5eb6e39434bce0da0dda23b8b097d736112c8fb0544706984deddb7ea188dc1e1645b7eaf2d5b79963001b440837522832ca65794a07c8e8504b4722985e7c9501b34cd62263d30e7cce9a3d1cd932c27c4fbafc6a19b8b979295c731b1d4b9a573d43b354ad479a326d10eeadf9e0bc5b2a2feb6f5be5b36bfaaf07f89f0ca07cffe5df967e6dcf6aff6267a8a15fca6c39a63f3b5ca07b5d3012126efd8edd2ae98706361f721b17a02b3bcdf8a1c1168e16079ee1fc733c213116f58fd1d476689604a29c82b8689d30d9791732f665bd8912f912839d24133b8c60a5409d1f9582c8475a106212e8081855d104e61368a09aa350db59422f9304c76cd8861b423660c96dadb535a76cd6561ece135bcfbad055e2f6c90e7c6b23b2c152811082fd970765b08016aa30b6434d509f0259a0074df8cfc738111826e499e43f1ec74501ec53f3a3330b260b6259cf09523b30f82b08a6184139bd546676839c3de12687b2cddae40c35ec1c088ca6ad42f22be1352394d81f2ebfb3959e3dbc713eb7bd7fa943e05fb4149f0a3ddf31206c97754ba266194b912efa1a7e3bca6d4678974d43cef41700d9cbcd328fd104a60558055db4bb4b369095066905390ad10f9bd8783920574aa30c371fdcef02a40a3f7c6c2f3505cc1ce84cc7125104a0c1fc23f4f88c20da50afff3e0c945aa193aa7445b6760044a0a494226d1f5df510975edfcb0d63689fa94321cbbc27b143ee5bbdc549164afbdf5354f7fe6dd0aef6d28aca852985460ba60d33df782596afc5cd53dd6994f94714f7d6762846b81da4893fdc3d80935e9183772349efae9777b4f2f309f5f4f61b4352b83d16366aea7b0d8f1bbb724660b26eec0a1d9104a66eeedc38022719eb9a0e1d539acae483a3407353b99f1b44e8f5196f1911b1e37fbd596cf5df1308af064c40a55701b60a4bf64265925bc5d59dc319dcaf887cac84fd40ec5ce940f7cf7933e590b7ede7e0bd6ea42c8f67c76ec92bd05ada5ac37995163e8d3cf8cf8a7143920926800b6a875ab1b331adf022f918b7c06929107ddd0f9852d3d21b0795160f7ee659de550d0a8c512a155b275675bf41d48bf8a41d6e69d86df5bd79bb60b35f9ebe53c7b37003a16da323dff04d2fad527d469f473904cac2a8bd233e4e19fad0e37a23fb47caba586835a9767069e011ffe5ce4864212ce14172f5041f603645c78c5d6624222d4c1243fd305540ed5332869fb55afc6a5bc5b779416fcfc6a6c3867f226f2b0ddfda299a470bd46592e426163e49f5790681fd15a135ea3ab485d396536b7bfaffb378e0fb1aed26e94df9c9fe5b43d712a62bd7b240945846e5a5ec3757ccb151938539ca65246e3d55e13df74808160273d355f503807bca839df9ea069cb195683b4cb40b313f57f4dc0a3c1bbbbe8ac901bf4e2a8436f092d3608355491ab2660f42f458ccf0dc052882f2108e817913fbcfee29814b9d13e690332f640b501bf2de953139393220b0a17a1a333bee6dfc1042157b09b1be6361163bb09346e20d703f017b320278cfc4e16e4ceff49ca9374c5c24d4c7501fa8514cdc7edffa26cdb14c56cf344a07271d48d8bcf6acaa4c1a7848ea07e1388f202d1430ae6ffe775f1edfe0120924b007197e0d8dd1dcb75a6152d6bc357e9e467cd69be386147d90408b811784a1e92b1ec7b29b3c8d8d596ca40e8d2127d9041d7665494cf74c8a5b585f5ead5da2563104bde217568b8a7e1154c26455e4877fef07f8260edeb000e5e0ab32bee2070d279d0b88f3fd6f6e6853a637e414e70d922ec6e30f1a203a9e8eeec344860a76d308997326d62e3cddd10d66dc3c4a0538473c135614e20b822ed87e13cd4c11a1e29a24858b1844008b073e0dba5d25d8f4fa8cc21ecc42da7209aa5053af5572d9fa5bd6fccd039f7fec33f25c013c740159e02d3fb17ceba7b5ec7d910c53c6a2e0114e61b24680beec4331994f7d70cc1e52ad90832092742acf4760ba318b3f6d4f7cefee2b4b5f9f14d40a527c08cca2b550a0ff351fbf7fda37e2ff1ffc45470ed400fe7e220cf8b20f91b378df51398441fb1e154871b43233492f6dbcff02b6e46ad264db9e2ee59d66f30afef85d6e80c7801f1e2ef1cb6e654f305057f36f35595472a681a04db1081661072c6538d9e0fc75f07cf5a376999a3b46fc5e6b21032e6dda6b6035f4f193026463578713453770
     _Values:
     - {fileID: 873385299}
     - {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
@@ -3395,15 +3769,6 @@ MonoBehaviour:
     - {fileID: 1816401400}
     - {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
     - {fileID: 10916, guid: 0000000000000000f000000000000000, type: 0}
-    - {fileID: 886608199}
-    - {fileID: 886608198}
-    - {fileID: 262055960}
-    - {fileID: 886608197}
-    - {fileID: 262055963}
-    - {fileID: 262055962}
-    - {fileID: 886608196}
-    - {fileID: 262055961}
-    - {fileID: 886608195}
     - {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
     - {fileID: 1585402436}
     - {fileID: 3338896894775925508, guid: 357e50dd2c1384e129179e3a6ea6c4e4, type: 3}
@@ -3454,8 +3819,7 @@ MonoBehaviour:
     - {fileID: 11500000, guid: f24ca878473f543f29cf548abf1ea621, type: 3}
     - {fileID: 1662525342}
     - {fileID: 293928603}
-    - {fileID: 1904690601}
-    - {fileID: 1904690602}
+    - {fileID: 346469233}
     - {fileID: 9101, guid: 0000000000000000f000000000000000, type: 0}
     - {fileID: -6090568113533005507, guid: 45af90c393a054196b45a0584e62f8f5, type: 3}
     - {fileID: 7433338533053954386, guid: 45af90c393a054196b45a0584e62f8f5, type: 3}
@@ -3469,7 +3833,7 @@ MonoBehaviour:
     - {fileID: 4584671053970592468, guid: 45af90c393a054196b45a0584e62f8f5, type: 3}
     - {fileID: 8228938214290033325, guid: 45af90c393a054196b45a0584e62f8f5, type: 3}
     - {fileID: 3316425174430470091, guid: 45af90c393a054196b45a0584e62f8f5, type: 3}
-    - {fileID: 1904690600}
+    - {fileID: 6282524837404618621}
     - {fileID: -4733365628477956816, guid: 45af90c393a054196b45a0584e62f8f5, type: 3}
     - {fileID: 4413694071827464959, guid: 45af90c393a054196b45a0584e62f8f5, type: 3}
     - {fileID: 160154789899534285, guid: 45af90c393a054196b45a0584e62f8f5, type: 3}
@@ -3487,7 +3851,15 @@ MonoBehaviour:
     - {fileID: -73581967, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
     - {fileID: 293928604}
     - {fileID: 293928605}
-    - {fileID: 2800000, guid: 5f2a108eb023faf43a809979fd3d38f2, type: 3}
+    - {fileID: 346469232}
+    - {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+    - {fileID: 346469225}
+    - {fileID: 346469231}
+    - {fileID: 346469226}
+    - {fileID: 346469230}
+    - {fileID: 346469229}
+    - {fileID: 346469228}
+    - {fileID: 346469227}
 --- !u!4 &1320902150
 Transform:
   m_ObjectHideFlags: 0
@@ -4134,7 +4506,7 @@ RectTransform:
   m_Children:
   - {fileID: 2016749030}
   - {fileID: 51345354}
-  m_Father: {fileID: 4453775298060511177}
+  m_Father: {fileID: 346469226}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -4326,54 +4698,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1824548821}
   m_CullTransparentMesh: 1
---- !u!1 &1904690600
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1904690602}
-  - component: {fileID: 1904690601}
-  m_Layer: 5
-  m_Name: UIDocument
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1904690601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1904690600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PanelSettings: {fileID: 11400000, guid: 356587036f4684e1a915446094a236f3, type: 2}
-  m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 9197481963319205126, guid: b968cc8c141ff45d896edb445b26ddd6, type: 3}
-  m_SortingOrder: 0
---- !u!4 &1904690602
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1904690600}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1994842536
 GameObject:
   m_ObjectHideFlags: 0
@@ -4631,6 +4955,7 @@ GameObject:
   - component: {fileID: 4781285621617228745}
   - component: {fileID: 3708151449101141329}
   - component: {fileID: 2099008353876134448}
+  - component: {fileID: 6282524837404618621}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -4917,7 +5242,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4498330354875642684}
-  - {fileID: 1822987300}
   m_Father: {fileID: 957704827}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -5369,6 +5693,392 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &6282524837404618621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037869796076437468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    dataVersion: 2
+    usedInTemplate: {fileID: 0}
+    name: FSM
+    startState: InitState
+    states:
+    - name: InitState
+      description: 
+      colorIndex: 6
+      position:
+        serializedVersion: 2
+        x: 225.02344
+        y: 112
+        width: 123
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: OnInitHide
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Hide
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: OnInitDisplay
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Display
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.BoolTest
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: a4c8bf00
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: DisplayOnDefault
+          tooltip: "\u8BE5UI\u662F\u5426\u9ED8\u8BA4\u5F00\u7403"
+          showInInspector: 1
+          networkSync: 0
+          value: 1
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - OnInitDisplay
+        - OnInitHide
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 11000000170000001700000001000000
+        paramName:
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 00000000000000000100000000000000
+        paramByteDataSize: 00000000000000000000000001000000
+    - name: Display
+      description: 
+      colorIndex: 3
+      position:
+        serializedVersion: 2
+        x: 64
+        y: 201.0625
+        width: 122
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: OnExitTrigger
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Animation
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    - name: Hide
+      description: 
+      colorIndex: 4
+      position:
+        serializedVersion: 2
+        x: 386.02344
+        y: 204.0625
+        width: 133
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: OnEnterTrigger
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Animation
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    - name: Animation
+      description: 
+      colorIndex: 7
+      position:
+        serializedVersion: 2
+        x: 181.00781
+        y: 304.10156
+        width: 224
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: OnHideAnimationFinished
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Hide
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: OnDisplayAnimationFinished
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Display
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    events:
+    - name: OnInitHide
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: OnInitDisplay
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: OnExitTrigger
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: OnEnterTrigger
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: OnHideAnimationFinished
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: OnDisplayAnimationFinished
+      isSystemEvent: 0
+      isGlobal: 0
+    globalTransitions: []
+    variables:
+      floatVariables: []
+      intVariables: []
+      boolVariables:
+      - useVariable: 1
+        name: DisplayOnDefault
+        tooltip: "\u8BE5UI\u662F\u5426\u9ED8\u8BA4\u5F00\u7403"
+        showInInspector: 1
+        networkSync: 0
+        value: 1
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+      arrayVariables: []
+      enumVariables: []
+      categories:
+      - 
+      variableCategoryIDs: 00000000
+    description: 
+    docUrl: 
+    showStateLabel: 0
+    maxLoopCount: 0
+    watermark: 
+    password: 
+    locked: 0
+    manualUpdate: 0
+    outVariableIndices: 
+    keepDelayedEventsOnStateExit: 0
+    preprocessed: 1
+    ExposedEvents: []
+    OutputEvents: []
+    RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
+    EnableDebugFlow: 0
+    EnableBreakpoints: 1
+    editorFlags: 225
+    activeStateName: 
+    mouseEvents: 0
+    handleLevelLoaded: 0
+    handleTriggerEnter2D: 0
+    handleTriggerExit2D: 0
+    handleTriggerStay2D: 0
+    handleCollisionEnter2D: 0
+    handleCollisionExit2D: 0
+    handleCollisionStay2D: 0
+    handleTriggerEnter: 0
+    handleTriggerExit: 0
+    handleTriggerStay: 0
+    handleCollisionEnter: 0
+    handleCollisionExit: 0
+    handleCollisionStay: 0
+    handleParticleCollision: 0
+    handleControllerColliderHit: 0
+    handleJointBreak: 0
+    handleJointBreak2D: 0
+    handleOnGUI: 0
+    handleFixedUpdate: 0
+    handleLateUpdate: 0
+    handleApplicationEvents: 0
+    handleUiEvents: 0
+    handleLegacyNetworking: 0
+    handleAnimatorMove: 0
+    handleAnimatorIK: 0
+  fsmTemplate: {fileID: 0}
+  eventHandlerComponentsAdded: 0
 --- !u!114 &6343101807543957967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5649,6 +6359,4 @@ SceneRoots:
   - {fileID: 694867798}
   - {fileID: 1370062471}
   - {fileID: 957704827}
-  - {fileID: 886608199}
-  - {fileID: 1904690602}
   - {fileID: 293928605}

@@ -7,14 +7,13 @@
     <list default="true" id="80a6ca43-45d9-4549-98fe-3933e8749509" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Rigoletto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rigoletto/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3GlobalReferences.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3GlobalReferences.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Characters/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Characters/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/PopupPanelPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/PopupPanelPrefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/UIPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/UIPrefab.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/DemoMainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DemoMainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DemoMainScene01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DemoMainScene01.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlayGround.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlayGround.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UIMaking.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UIMaking.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Character/Character2DController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Character/Character2DController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameFramework/StateMachine/CharacterStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameFramework/StateMachine/CharacterStateMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateActionsExtension/InputDirection.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateActionsExtension/InputDirection.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameFramework/UI/LoadingUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameFramework/UI/LoadingUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameFramework/UI/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameFramework/UI/UIManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +115,7 @@
       <option name="presentableId" value="Default" />
       <updated>1695175403509</updated>
       <workItem from="1695175405782" duration="32729000" />
-      <workItem from="1695364650594" duration="1050000" />
+      <workItem from="1695364650594" duration="2649000" />
     </task>
     <servers />
   </component>

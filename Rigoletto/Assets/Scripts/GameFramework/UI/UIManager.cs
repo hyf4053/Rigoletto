@@ -13,6 +13,9 @@ namespace GameFramework.UI
         public GameObject loadGameButton;
         public GameObject loadingScreen;
         public Image loadingBarFill;
+        public GameObject mainUI;
+        
+        
 
         public GameObject loadSlotSelectionUI;
         public GameObject saveSlotUI;
@@ -61,13 +64,13 @@ namespace GameFramework.UI
                     
                     i.SpawnButtonObject(slotID,Color.red,out btn);
                     btn.GetComponent<Button>().onClick
-                        .AddListener(delegate { LoadGameWithMode(1,slotID,GameModeState.Adventure); });
+                        .AddListener(delegate { LoadGameWithMode(1,slotID,mainUI,GameModeState.Adventure); });
                 }
                 else
                 {
                     i.SpawnButtonObject(slotID,Color.green,out btn);
                     btn.GetComponent<Button>().onClick.
-                        AddListener(delegate { CreateNewSaveAndStartNewGame(slotID);});
+                        AddListener(delegate { CreateNewSaveAndStartNewGame(slotID,mainUI);});
                 }
             }
         }
@@ -76,9 +79,10 @@ namespace GameFramework.UI
         /// 针对可以创建存档的档位绑定的函数
         /// 点击后可以创建新存档栏位，然后开始加载新游戏
         /// </summary>
-        private void CreateNewSaveAndStartNewGame(string slotID)
+        private void CreateNewSaveAndStartNewGame(string slotID,GameObject ui)
         {
             StartNewGameWithMode(1,true,slotID);
+            ui.SetActive(false);
         }
 
         /// <summary>
@@ -87,7 +91,8 @@ namespace GameFramework.UI
         /// </summary>
         public void OverrideExistSaveDataAndStartNewGame(int sceneID, string slotID,GameModeState mode)
         {
-           LoadGameWithMode(sceneID,slotID,mode);
+           LoadGameWithMode(sceneID,slotID,mainUI,mode);
+           //ui.SetActive(false);
         }
 
         /// <summary>
@@ -135,7 +140,7 @@ namespace GameFramework.UI
             Singleton.Instance.SaveLoadManager.SaveAllData(slotID);
         }
 
-        private async void LoadGameWithMode(int sceneID, string slotID,
+        private async void LoadGameWithMode(int sceneID, string slotID,GameObject ui,
             GameModeState mode = GameModeState.Adventure)
         {
             //目前考虑这个用作debug的栏位暂存
@@ -144,6 +149,7 @@ namespace GameFramework.UI
             loadingScreen.SetActive(true);
             await Task.Delay(2000);
             LoadScene(sceneID,false,slotID);
+            ui.SetActive(false);
             //todo:这里可能会导致重复加载NaniNovel插件，要注意
             await Singleton.Instance.GameManager.LoadNaniNovel(mode);
             //todo：写死的动画，只是展示功能
