@@ -9,6 +9,8 @@ namespace Actors.Character
 {
     public class Character2DController : MonoBehaviour
     {
+        public CharacterConfig config;
+        
         public Animator characterAnimator;
         [FormerlySerializedAs("SpRenderer")] public SpriteRenderer spRenderer;
         public BaseCharacter baseCharacter;
@@ -18,6 +20,8 @@ namespace Actors.Character
 
         private static readonly int IsMove = Animator.StringToHash("isMove");
 
+        #region Old
+        
         /*#region FSM Variables
         
         public bool leftwardPressed;
@@ -266,7 +270,7 @@ namespace Actors.Character
                 
             }
         }*/
-        
+        #endregion
         
 
         // Start is called before the first frame update
